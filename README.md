@@ -17,4 +17,4 @@
 [SYSTEM-RAMOS-ZDY B站空间](https://space.bilibili.com/493998035)
 [超级好康的](http://toolbox.waterspo.top)
 
-[申请友链](https://maifile.cn/pdf/k72082741770.pdf)
+[申请友链](./friend)
