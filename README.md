@@ -20,6 +20,13 @@
 作弊：否<br>
 服务器版本：1.13.2 spigot插件服<br>
 
+##### 这是广告位
+服务器地址：server.fuibafuyu.top:19132<br>
+游戏模式：生存<br>
+游戏难度：困难<br>
+作弊：否<br>
+在线验证：是<br>
+
 ### 友情链接
 >[某全小站网盘](https://file.cqzhx.top/)<br>
 >[某全小站](http://www.cqzhx.top)<br>
