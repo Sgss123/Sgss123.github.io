@@ -5,3 +5,6 @@
 >贵站 Logo：（非必选）<br>
 >贵站描述：<br>
 >邮箱： XXXXXXXXXX@XXX.XXX<br>
+>按照以上格式摆放好后，请将邮箱发送至（二选一）：<br>
+>qingqi.tan@qq.com<br>
+>sgssdis@vip.qq.com
