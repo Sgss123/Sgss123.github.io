@@ -15,22 +15,16 @@
 
 ### 我的世界服务器
 #### 注意事项
-1. 服务器地址：play.waterspo.top
-2. 正版验证：否
-3. 作弊：否
-4. 服务器版本：1.13.2 spigot插件服
+服务器地址：play.waterspo.top<br>
+正版验证：否<br>
+作弊：否<br>
+服务器版本：1.13.2 spigot插件服<br>
 
 ### 友情链接
-[某全小站网盘](https://file.cqzhx.top/)
-
-[某全小站](http://www.cqzhx.top)
-
-[冬優ちゃんの小窝](https://www.fuibafuyu.top/) 
-
-[站主B站](https://space.bilibili.com/531522938)
-
-[SYSTEM-RAMOS-ZDY B站空间](https://space.bilibili.com/493998035)
-
-[超级好康的](http://toolbox.waterspo.top)
-
-[申请友链](./friend)
+>[某全小站网盘](https://file.cqzhx.top/)<br>
+>[某全小站](http://www.cqzhx.top)<br>
+>[冬優ちゃんの小窝](https://www.fuibafuyu.top/)<br> 
+>[站主B站](https://space.bilibili.com/531522938)<br>
+>[SYSTEM-RAMOS-ZDY B站空间](https://space.bilibili.com/493998035)<br>
+>[超级好康的](http://toolbox.waterspo.top)<br>
+>[申请友链](./friend)<br>
