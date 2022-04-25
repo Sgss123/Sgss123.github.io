@@ -3,10 +3,12 @@
 <iframe src="https://cn.bing.com/covidans/widget?&setlang=zh-CN&lcid=/TaiWan&mt=Map" height="545" frameborder="no" scrolling="no" border="0" width="100%"> </iframe>
 
 ### 来点音乐
-视窗欢迎音乐
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=528305962&auto=0&height=66"></iframe>
-生僻字
-<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=518781004&auto=0&height=66"></iframe>
+>视窗欢迎音乐<br>
+><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=528305962&auto=0&height=66"></iframe><br>
+>生僻字<br>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=518781004&auto=0&height=66"></iframe><br>
+>Beautiful Things(在？进来挤地铁！)<br>
+><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=3&id=2066975837&auto=1&height=66"></iframe>
 
 ### Windows实用工具
 [卸载工具Geek Uninstaller](https://file.cqzhx.top/d/123%E4%BA%91%E7%9B%98/%E7%94%B5%E8%84%91/%E7%94%B5%E8%84%91%E5%BF%85%E8%A3%85%E8%BD%AF%E4%BB%B6%EF%BC%88bilbil%E7%94%A8%E6%88%B7%E6%8E%A8%E8%8D%90%EF%BC%89/%E5%BD%B1%E8%A7%86%E5%90%8E%E6%9C%9F%E7%B3%BB%E7%BB%9F%E6%95%99%E5%AD%A6/%E7%94%B5%E8%84%91%E5%BF%85%E8%A3%85%E7%B3%BB%E5%88%97%E8%BD%AF%E4%BB%B6%20%201(%E7%94%B5%E8%84%91%E5%BF%85%E8%A3%85%E8%BD%AF%E4%BB%B6)/5%E3%80%81%E5%8D%B8%E8%BD%BD%E7%A5%9E%E5%99%A8Geek%20Uninstaller_v1.4.8.145_x64.exe)<br>
