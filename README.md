@@ -43,3 +43,33 @@
 >[SYSTEM-RAMOS-ZDY B站空间](https://space.bilibili.com/493998035)<br>
 >[超级好康的](http://toolbox.waterspo.top)<br>
 >[申请友链](./friend)
+
+<div>
+  <img src="https://api.xhofe.top/ip/?line1=Welcome！&amp;line2=www.waterspo.top" />
+</div>  
+
+<script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
+<script>
+    L2Dwidget.init({
+        "model": {
+　　　　　　　//jsonpath控制模型，这个是z16，蛮可爱的
+            jsonPath: "https://unpkg.com/live2d-widget-model-z16@1.0.5/assets/z16.model.json",
+            "scale": 1
+        },
+        "display": {
+            "position": "left", //看板娘的表现位置
+            "width": 150,  //宽度
+            "height": 250, //高度
+            "hOffset": 0,
+            "vOffset": -20
+        },
+        "mobile": {
+            "show": false, //是否在移动端显示
+            "scale": 0.5
+        },
+        "react": {
+            "opacityDefault": 0.7,
+            "opacityOnHover": 0.2
+        }
+    });
+</script>
