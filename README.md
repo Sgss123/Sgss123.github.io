@@ -47,7 +47,3 @@
 >[SYSTEM-RAMOS-ZDY B站空间](https://space.bilibili.com/493998035)<br>
 >[超级好康的](http://toolbox.waterspo.top)<br>
 >[申请友链](./friend)
-
-<div>
-  <img src="https://api.xhofe.top/ip/?line1=Welcome！&amp;line2=www.waterspo.top" />
-</div>  
