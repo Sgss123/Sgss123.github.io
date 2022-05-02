@@ -41,7 +41,7 @@
 
 ### 友情链接
 >[某全小站网盘](https://file.cqzhx.top/)<br>
->[某全小站](http://www.cqzhx.top)<br>
+>[某全小站(一个忠于分享资源的网站)](http://www.cqzhx.top)<br>
 >[冬優ちゃんの小窝](https://www.fuibafuyu.top/)<br> 
 >[站主B站](https://space.bilibili.com/531522938)<br>
 >[SYSTEM-RAMOS-ZDY B站空间](https://space.bilibili.com/493998035)<br>
