@@ -24,7 +24,7 @@
 ### 我的世界服务器
 #### 注意事项
 ```
-服务器地址：play.waterspo.top
+服务器地址：play.waterspo.top 或 waterspo.top
 正版验证：否
 作弊：否
 服务器版本：1.13.2 spigot插件服
