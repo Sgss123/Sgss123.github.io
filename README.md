@@ -3,10 +3,9 @@
 <iframe src="https://cn.bing.com/covidans/widget?&setlang=zh-CN&lcid=/TaiWan&mt=Map" height="545" frameborder="no" scrolling="no" border="0" width="100%"> </iframe>
 
 ### 来点音乐
->视窗欢迎音乐<br>
-><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=528305962&auto=0&height=66"></iframe><br>
->Beautiful Things(在？进来挤地铁！)<br>
-><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=3&id=2066975837&auto=1&height=66"></iframe>
+视窗欢迎音乐<br>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=528305962&auto=0&height=66"></iframe><br>
+
 
 ----------
 
