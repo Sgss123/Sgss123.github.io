@@ -46,7 +46,7 @@
 ----------
 
 ### 我的世界下载
-#### 我的世界基岩版
+#### 我的世界基岩版(需要正版)
   * [MinecraftUWP1.18.1201.0](https://exts.sharepoint.com/:u:/r/sites/2269718601_qq.com/Shared%20Documents/Microsoft.MinecraftUWP_1.18.1201.0_x64__8wekyb3d8bbwe.Appx?csf=1&web=1&e=5nnmxr)
 
 ----------
