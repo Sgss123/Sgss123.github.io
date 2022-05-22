@@ -20,7 +20,7 @@
 ----------
 
 ### 是时候(划掉)分享一些我没事时写的玩意啦！(易语言)
-[P4P下载器](https://file.cqzhx.top/)<br>
+[P4P下载器](https://pan.baidu.com/s/1mhJ4JvQ051rRbPNkL_Gp3A?pwd=1234)<br>
 
 ----------
 
