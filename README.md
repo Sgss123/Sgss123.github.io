@@ -1,8 +1,6 @@
 ## Welcome to Shangguanshenshang Blogs
 
-<div class="bingwidget" data-type="covid19" data-market="zh-cn" data-language="zh-cn"></div>
-
-<script src="//www.bing.com/widget/bootstrap.answer.js" async=""></script>
+<iframe src="https://cn.bing.com/covidans/widget?&amp;setlang=zh-CN&amp;lcid=/TaiWan&amp;mt=Map" height="545" frameborder="no" scrolling="no" border="0" width="100%"> </iframe>
 
 ### 来点音乐放松一下
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=293 height=86 src="//music.163.com/outchain/player?type=2&id=492390949&auto=1&height=66"></iframe>
