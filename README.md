@@ -59,3 +59,6 @@
 >[SYSTEM-RAMOS-ZDY B站空间](https://space.bilibili.com/493998035)<br>
 >[超级好康的](http://toolbox.waterspo.top)<br>
 >[申请友链](./friend)
+
+
+<a href="https://icp.gov.moe/?keyword=20229994" target="_blank">萌ICP备20229994号</a>
