@@ -89,11 +89,11 @@
 	</script>
 <!-- End Jekyll SEO tag -->
 <link rel="preconnect" href="https://fonts.gstatic.com/">
-<link rel="preload" href="./index_files/css" as="style" type="text/css" crossorigin="">
+<link rel="preload" href="index_files/css" as="style" type="text/css" crossorigin="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#157878">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<link rel="stylesheet" href="./index_files/style.css">
+<link rel="stylesheet" href="index_files/style.css">
 <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
 <!-- Setup Google Analytics -->
 <!-- You can set your favicon here -->
@@ -127,6 +127,11 @@
     opacity: 1 !important;
 }
 </style>
+<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.button.min.css" rel="stylesheet" type="text/css">
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.button.min.js"></script>
 </head>
 
 <body>
@@ -138,13 +143,16 @@
 <main id="content" class="main-content" role="main">
   <h2 id="welcome-to-shangguanshenshang-blogs">欢迎来到Sgss's Blogs</h2>
   <hr>
-  <h3 id="我的世界服务器">关于我</h3>
+  <details>
+  <summary><h3 id="我的世界服务器">关于我</h3></summary>
   <p><font face="新宋体" size="5"><font color="#55ffff" ><b>一个<strike><font color="#FFFFFF">初三学子</font></strike>菜狗,</b></font>是个<font color="#ff0000" face="华文行楷">学渣。</font>平时喜欢研究软件，刷B站。<br/>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp——没了</font></p>
-  <hr>
+<hr>
+</details>
   <h3 id="友情链接">友情链接</h3>
   <blockquote>
-    <a href="#"><strike><font color="#b5b5b5">某全小站网盘</font></strike></a><br>
-    <a href="https://www.fuibafuyu.cn/">冬優ちゃんの小窝</a><br>
+    <p><a href="#"><strike><font color="#b5b5b5">某全小站网盘</font></strike></a><br>
+      <a href="https://www.fuibafuyu.cn/">冬優ちゃんの小窝</a><br>
+    </p>
     <div class="friend" id="friends_pkq"> <a href="https://www.bigtao.tk" title="每个人都是星辰"><img src="https://s1.imagehub.cc/images/2022/09/30/logo.png" width="16" height="16" alt="" />BigTaoの小破站</a> </div>
     <p> <a href="https://www.waterspo.top/friend">申请友链</a></p>
   </blockquote>
@@ -155,6 +163,11 @@
   <iframe src="https://voice.baidu.com/act/newpneumonia/newpneumonia/?from=osari_aladin_banner" height="600" frameborder="no" width="20%">
   </frame>
 </div>
+<script type="text/javascript">
+$(function() {
+	$( "#Button1" ).button(); 
+});
+</script>
 </body>
 <div>
   <div class="cubox-extension-helper-button" style="display: none;">
