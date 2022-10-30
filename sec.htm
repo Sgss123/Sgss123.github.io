@@ -3,52 +3,68 @@
 <head>
 <meta http-equiv=Content-Type content="text/html; charset=utf-8">
 <title>极语言中文编程说明书</title>
+<link rel="shortcut icon" type="image/x-icon" href="image/sec.ico" media="screen" />
 <link href="sec.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
 <center><p><a href="Sec.rar" target="_blank">在线安装</a>&nbsp;<a href="SEC.rar" target="_blank">手动安装包</a>&nbsp;<a href="https://jq.qq.com/?_wv=1027&k=giNdYVAv" target="_blank">QQ交流群：13016712</a>&nbsp;<a href="https://www.ixigua.com/pseries/7128744019546341921/" target="_blank">游戏教学视频</a><a href="https://www.ixigua.com/pseries/7128748847265743371/" target="_blank">入门教学视频</a>&nbsp;<a href="ascii.htm" target="_blank">ASCII码表</a></p></center>
 <center><h1>极语言使用手册</h1></center>
-<p><a id="入门"><font size="6">第一节 入门</font></a></p>
+<p><span id="入门"><font size="6">第一节 入门</font></span></p>
 <details><summary><a id="启动软件"><font size="+2">1.启动软件</font></a></summary>
-<p><img src="pic/sec.PNG"></p>
+<p><img src="pic/sec.PNG" title="极语言起始页" alts="极语言起始页"></p>
 <font size="+1">打开软件默认是“新建”选项，点击初级程序。进入主界面。</font>
-<img src="pic/代码.PNG"><br>
-<a id="写小程序">我们知道，编写一个程序是需要<b>很多代码</b>的，这些代码往往要完成很多重复性工作, 所以我们就要把代码分成<b>若干个小程序段</b>，称之为“</a><a href="#小程序" vlink="#0000ff">小程序</a>”。<br>
+<img src="pic/代码.PNG" title="极语言IDE" alts="极语言IDE"><br>
+<span id="写小程序">我们知道，编写一个程序是需要<b>很多代码</b>的，这些代码往往要完成很多重复性工作, 所以我们就要把代码分成<b>若干个小程序段</b>，称之为“</span><a href="#小程序" vlink="#0000ff">小程序</a>”。<br>
 每一段“小程序”我们都可以在不同地方调用执行它，具体是怎么实现呢？比如我们要计算a+b=c，请看下面简单的示例：<br>
 <br>
-<div style="width: 10%; background-color: aliceblue; font-size: 20px; font-family: Arial, Helvetica, sans-serif;" >
-<font color="#0000FF">小程序</font> 加法<br>
-<font color="#0000FF">整数</font> a,b,c;<br>
-c=a+b<br>
-<font color="#0000FF">结束</font><br>
-</div>
+<blockquote>
+	<div class="code" >
+		<font color="#0000FF">小程序</font> 加法<br>
+		<font color="#0000FF">整数</font> a,b,c;<br>
+		c=a+b<br>
+		<font color="#0000FF">结束</font><br>
+	</div>
+</blockquote>
 <br>
 首先<a href="#写小程序">写“小程序”</a>这三个字，就表示我们要写一段代码，然后空格，再写上这段程序的名字“加法”，然后换行。<br>
 不用换行也可以用分号，作用是把后面的语句分开。如果需要传递参数，“加法”后面用小括号，把所需的参数写进去去。<br>
-注意编程用的标点符号都是英文字符，中文的标号符号很多输入法打不出来，所以统一使用英文。<br>
+<font color="#b1b1b1"><strike>注意编程用的标点符号都是英文字符，中文的标号符号很多输入法打不出来，所以统一使用英文。</strike></font><br>
 当这段代码写完，一定要写上“结束”，计算机才会知道这个代码片段至此结束。<br>
 <br>
-然后我们接着看看参数是如何传递的：<br>
+<span id="参数传递">然后我们接着看看参数是如何传递的：</span><br>
 <br>
-<font color="#0000FF">小程序</font> 加法(整数 a,整数 b)<br>
-<font color="#0000FF">整数</font> c<br>
-c=a+b<br>
-<font color="#0000FF">结束</font><br>
+<blockquote>
+	<div class="code">
+		<font color="#0000FF">小程序</font> 加法(整数 <font color="#FF0000">a</font>,整数 <font color="#FF0000">b</font>)<br>
+		<font color="#0000FF">整数</font> c<br>
+		c=a+b<br>
+		<font color="#0000FF">结束</font><br>
+		<font color="b1b1b1">// Tips:以上标<font color="#FF0000">红色</font>的为整数参数(int)，实际编写时并不会高亮</font>
+	</div>
+</blockquote>
 <br>
-括号里面传递两个参数a和b，它们是变量的名字，整数代表这个变量是数字，a和b可以是－21亿到21之间的任意数字。<br>
+括号里面传递两个参数 a 和 b ，它们是变量的名字，整数代表这个变量是数字， a 和 b 可以是－21亿到21之间的任意数字。<br>
 有了这段小程序，我们就可以在其它地方调用它，写法是：加法(100,5);<br>
 那么它就会计算出c＝105。可是我们需要把c这结果取出来，那么小程序需要把结果返回给调用者。<br>
 <br>
-<font color="#0000FF">小程序</font> 加法(整数 a,整数 b);<br>
-<font color="#FF00FF">返回</font>(a+b);<br>
-<font color="#0000FF">结束</font>;<br>
+<blockquote>
+	<div class="code">
+		<font color="#0000FF">小程序</font> 加法(整数 <font color="#FF0000">a</font>,整数 <font color="#FF0000">b</font>);<br>
+		<font color="#FF00FF">返回</font>(a+b);<br>
+		<font color="#0000FF">结束</font>;<br>
+	</div>
+</blockquote>
 <br>
 这样书写之后，我们调用时，就可以写：<br>
-<font color="#0000FF">整数</font> d;<br>
-d=加法(100,5);<br>
+<blockquote>
+	<div class="code">
+		<font color="#0000FF">整数</font> d;<br>
+		d=加法(100,5);<br>
+	</div>
+</blockquote>
 那么我们把计算结果给到d这个变量，此时d的值就是105。由此我们可以看出，申请变量就是要存放一个数据，我们可以去读写这个变量的数据。<br>
-比如：<font color="#0000FF">文本</font> s="<font color="#0080FF">你好</font>";<br>
+比如：<div class="code"><font color="#0000FF">文本</font> s="<font color="#0080FF">你好</font>";</div><br>
 就是申请一个文本型变量s，然后给s赋值为“你好”，注意文本也就是字符串，它要加双引号。<br>
 有没有注意到，我在讲解代码写法时，开始没用分号，是符合VB的书写习惯；后来使用分号，符合C语言习惯。两种写法都可以兼容。<br>
 <font color="#FF6000">书写代码时候,左下方列表中有常用的语法关键词,不想打字时点击相应的文字就会自动插入到代码里<br>
