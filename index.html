@@ -1,180 +1,202 @@
 <!DOCTYPE html>
 <!-- saved from url=(0025)https://www.waterspo.top/ -->
 <html>
-<script>
-(function() {
-	class RuffleMimeType {
-		constructor(a, b, c) {
-			this.type = a, this.description = b, this.suffixes = c
-		}
-	}
-	class RuffleMimeTypeArray {
-		constructor(a) {
-			this.__mimetypes = [], this.__named_mimetypes = {};
-			for(let b of a) this.install(b)
-		}
-		install(a) {
-			let b = this.__mimetypes.length;
-			this.__mimetypes.push(a), this.__named_mimetypes[a.type] = a, this[a.type] = a, this[b] = a
-		}
-		item(a) {
-			return this.__mimetypes[a]
-		}
-		namedItem(a) {
-			return this.__named_mimetypes[a]
-		}
-		get length() {
-			return this.__mimetypes.length
-		}
-	}
-	class RufflePlugin extends RuffleMimeTypeArray {
-		constructor(a, b, c, d) {
-			super(d), this.name = a, this.description = b, this.filename = c
-		}
-		install(a) {
-			a.enabledPlugin || (a.enabledPlugin = this), super.install(a)
-		}
-	}
-	class RufflePluginArray {
-		constructor(a) {
-			this.__plugins = [], this.__named_plugins = {};
-			for(let b of a) this.install(b)
-		}
-		install(a) {
-			let b = this.__plugins.length;
-			this.__plugins.push(a), this.__named_plugins[a.name] = a, this[a.name] = a, this[b] = a
-		}
-		item(a) {
-			return this.__plugins[a]
-		}
-		namedItem(a) {
-			return this.__named_plugins[a]
-		}
-		get length() {
-			return this.__plugins.length
-		}
-	}
-	const FLASH_PLUGIN = new RufflePlugin("Shockwave Flash", "Shockwave Flash 32.0 r0", "ruffle.js", [new RuffleMimeType("application/futuresplash", "Shockwave Flash", "spl"), new RuffleMimeType("application/x-shockwave-flash", "Shockwave Flash", "swf"), new RuffleMimeType("application/x-shockwave-flash2-preview", "Shockwave Flash", "swf"), new RuffleMimeType("application/vnd.adobe.flash-movie", "Shockwave Flash", "swf")]);
+	<script>
+		(function() {
+			class RuffleMimeType {
+				constructor(a, b, c) {
+					this.type = a, this.description = b, this.suffixes = c
+				}
+			}
+			class RuffleMimeTypeArray {
+				constructor(a) {
+					this.__mimetypes = [], this.__named_mimetypes = {};
+					for (let b of a) this.install(b)
+				}
+				install(a) {
+					let b = this.__mimetypes.length;
+					this.__mimetypes.push(a), this.__named_mimetypes[a.type] = a, this[a.type] = a, this[b] = a
+				}
+				item(a) {
+					return this.__mimetypes[a]
+				}
+				namedItem(a) {
+					return this.__named_mimetypes[a]
+				}
+				get length() {
+					return this.__mimetypes.length
+				}
+			}
+			class RufflePlugin extends RuffleMimeTypeArray {
+				constructor(a, b, c, d) {
+					super(d), this.name = a, this.description = b, this.filename = c
+				}
+				install(a) {
+					a.enabledPlugin || (a.enabledPlugin = this), super.install(a)
+				}
+			}
+			class RufflePluginArray {
+				constructor(a) {
+					this.__plugins = [], this.__named_plugins = {};
+					for (let b of a) this.install(b)
+				}
+				install(a) {
+					let b = this.__plugins.length;
+					this.__plugins.push(a), this.__named_plugins[a.name] = a, this[a.name] = a, this[b] = a
+				}
+				item(a) {
+					return this.__plugins[a]
+				}
+				namedItem(a) {
+					return this.__named_plugins[a]
+				}
+				get length() {
+					return this.__plugins.length
+				}
+			}
+			const FLASH_PLUGIN = new RufflePlugin("Shockwave Flash", "Shockwave Flash 32.0 r0", "ruffle.js", [
+				new RuffleMimeType("application/futuresplash", "Shockwave Flash", "spl"), new RuffleMimeType(
+					"application/x-shockwave-flash", "Shockwave Flash", "swf"), new RuffleMimeType(
+					"application/x-shockwave-flash2-preview", "Shockwave Flash", "swf"), new RuffleMimeType(
+					"application/vnd.adobe.flash-movie", "Shockwave Flash", "swf")
+			]);
 
-	function install_plugin(a) {
-		navigator.plugins.install || Object.defineProperty(navigator, "plugins", {
-			value: new RufflePluginArray(navigator.plugins),
-			writable: !1
-		}), navigator.plugins.install(a), 0 < a.length && !navigator.mimeTypes.install && Object.defineProperty(navigator, "mimeTypes", {
-			value: new RuffleMimeTypeArray(navigator.mimeTypes),
-			writable: !1
-		});
-		for(var b = 0; b < a.length; b += 1) navigator.mimeTypes.install(a[b])
-	}
-	install_plugin(FLASH_PLUGIN);
-})();
-</script>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>欢迎来到Sgss's Blogs</title>
-<meta name="generator" content="Jekyll v3.9.2">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="cache-control" content="no-cache">
-<meta http-equiv="pragma" content="no-cache">
-<meta copyright content="Sgss">
-<link rel="preconnect" href="https://fonts.gstatic.com/">
-<link rel="preload" href="index_files/css" as="style" type="text/css" crossorigin="">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#157878">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<link rel="stylesheet" href="index_files/style.css">
-<!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
-<!-- Setup Google Analytics -->
-<!-- You can set your favicon here -->
-<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
-<!-- end custom head snippets -->
-<style type="text/css">
-.cubox-extension-helper-button {
-    position: absolute !important;
-    display: none;
-    width: 26px !important;
-    height: 26px !important;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #C6C6C6;
-    border-radius: 6px !important;
-    background: #fff !important;
-    z-index: 99999999999999999999 !important;
-    cursor: pointer;
-    filter: drop-shadow(1px 2px 8px rgba(0, 0, 0, 0.15));
-    transition: border-color .2s ease;
-}
-.cubox-extension-helper-button:hover {
-    border-color: #636363;
-}
-.cubox-extension-helper-button svg {
-    pointer-events: none;
-    opacity: .8 !important;
-    transition: opacity .2s ease;
-}
-.cubox-extension-helper-button:hover svg {
-    opacity: 1 !important;
-}
-</style>
-<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
-<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
-<link href="jQueryAssets/jquery.ui.button.min.css" rel="stylesheet" type="text/css">
-<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
-<script src="jQueryAssets/jquery.ui-1.10.4.button.min.js"></script>
-<script type="text/javascript">
-    /* 手机打开提示 */
-     var mobileAgent = new Array("iphone", "ipod", "ipad", "android", "mobile", "blackberry", "webos", "incognito", "webmate", "bada", "nokia", "lg", "ucweb", "skyfire");
-     var browser = navigator.userAgent.toLowerCase();
-     var isMobile = false;
-     for (var i = 0; i < mobileAgent.length; i++) {
-         if (browser.indexOf(mobileAgent[i]) != -1) {
-             isMobile = true;
-             alert("本网站暂未适配手机，建议使用电脑访问效果最佳！点击确定继续使用手机浏览");
-             break;
-         }
-     }
-</script>
-</head>
+			function install_plugin(a) {
+				navigator.plugins.install || Object.defineProperty(navigator, "plugins", {
+						value: new RufflePluginArray(navigator.plugins),
+						writable: !1
+					}), navigator.plugins.install(a), 0 < a.length && !navigator.mimeTypes.install && Object
+					.defineProperty(navigator, "mimeTypes", {
+						value: new RuffleMimeTypeArray(navigator.mimeTypes),
+						writable: !1
+					});
+				for (var b = 0; b < a.length; b += 1) navigator.mimeTypes.install(a[b])
+			}
+			install_plugin(FLASH_PLUGIN);
+		})();
+	</script>
+	<script>
+		function replace(URL) {
+			window.location.replace(URL)
+		}
+	</script>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>欢迎来到Sgss's Blogs</title>
+		<meta name="generator" content="Jekyll v3.9.2">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="cache-control" content="no-cache">
+		<meta http-equiv="pragma" content="no-cache">
+		<meta copyright content="Sgss">
+		<link rel="preconnect" href="https://fonts.gstatic.com/">
+		<link rel="preload" href="index_files/css" as="style" type="text/css" crossorigin="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="theme-color" content="#157878">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<link rel="stylesheet" href="index_files/style.css">
+		<!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+		<!-- Setup Google Analytics -->
+		<!-- You can set your favicon here -->
+		<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+		<!-- end custom head snippets -->
+		<style type="text/css">
+			.cubox-extension-helper-button {
+				position: absolute !important;
+				display: none;
+				width: 26px !important;
+				height: 26px !important;
+				justify-content: center;
+				align-items: center;
+				border: 1px solid #C6C6C6;
+				border-radius: 6px !important;
+				background: #fff !important;
+				z-index: 99999999999999999999 !important;
+				cursor: pointer;
+				filter: drop-shadow(1px 2px 8px rgba(0, 0, 0, 0.15));
+				transition: border-color .2s ease;
+			}
 
-<body>
-<a id="skip-to-content" href="https://www.waterspo.top/#content">Skip to the content.</a>
-<header class="page-header" role="banner">
-  <h1 class="project-name"><font face="华文隶书" color="#55ffff">&#27426;&#36814;&#26469;&#21040;Sgss's Blogs</font></h1><a href="https://icp.gov.moe/?keyword=20229994" target="_blank"><font color="#f400a1"><b>萌ICP备20229994号</b></font></a>
-  <img alt="今日诗词" src="https://v2.jinrishici.com/one.svg?color=DarkRed" style="max-width:100%; display: block; margin: 0 auto;">
-  <h2 class="project-tagline"></h2>
-</header>
-<main id="content" class="main-content" role="main">
-<div>
-  <h2 id="welcome-to-shangguanshenshang-blogs">&#27426;&#36814;&#26469;&#21040;<font face="Arial">Sgss's Blogs</font></h2>
-</div>
-<div style="height:80%; left:75%;">
-    <font size="5px" color="#aa0000"><span id="jinrishici-sentence">正在加载，请稍候....</span></font>
-    <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-</div>
-  <hr>
-  <details>
-  <summary><h3 id="我的世界服务器">关于我</h3></summary>
-  <p><font face="新宋体" size="5"><font color="#55ffff" ><b>一个<strike><font color="#FFFFFF">初三学子</font></strike>菜狗,</b></font>是个<font color="#ff0000" face="华文行楷">学渣。</font>平时喜欢研究软件，刷B站。<br/>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp——没了</font></p>
-<hr>
-</details>
-  <h3 id="友情链接">友情链接</h3>
-  <blockquote>
+			.cubox-extension-helper-button:hover {
+				border-color: #636363;
+			}
 
-    <p><a href="#"><strike><font color="#b5b5b5">某全小站网盘</font></strike></a><br>
-      <a href="https://www.fuibafuyu.cn/">冬優ちゃんの小窝</a><br>
-    </p>
-    <div class="friend" id="friends_pkq"> <a href="https://www.bigtao.xyz" title="每个人都是星辰"><img src="https://s1.imagehub.cc/images/2022/09/30/logo.png" width="16" height="16" alt="" />BigTaoの小破站</a> </div>
-    <p> <a href="https://www.waterspo.top/friend">申请友链</a></p>
-  </blockquote>
-</main>
-<div style="width:120%; height: inherit; left: 0%; position:fixed; bottom:0;">
-	<img style="border-radius: 8px" src="https://api.xhofe.top/ip/?line1=欢迎访问本站&line2=本站地址:www.waterspo.top"></img>
-</div>
-<div style="width:120%; height: inherit; left: 75%; position:fixed; bottom:0;" >
-  <h2>新型冠状病毒 (COVID-19) 统计信息</h2>
-  <iframe src="https://voice.baidu.com/act/newpneumonia/newpneumonia/?from=osari_aladin_banner" height="600" frameborder="no" width="20%">
-  </frame>
-</div>
+			.cubox-extension-helper-button svg {
+				pointer-events: none;
+				opacity: .8 !important;
+				transition: opacity .2s ease;
+			}
 
-</body>
+			.cubox-extension-helper-button:hover svg {
+				opacity: 1 !important;
+			}
+		</style>
+		<script type="text/javascript">
+			/* 手机打开提示 */
+			var mobileAgent = new Array("iphone", "ipod", "ipad", "android", "mobile", "blackberry", "webos", "incognito",
+				"webmate", "bada", "nokia", "lg", "ucweb", "skyfire");
+			var browser = navigator.userAgent.toLowerCase();
+			var isMobile = false;
+			for (var i = 0; i < mobileAgent.length; i++) {
+				if (browser.indexOf(mobileAgent[i]) != -1) {
+					isMobile = true;
+					alert("本网站暂未适配手机，建议使用电脑访问效果最佳！点击确定继续使用手机浏览");
+					break;
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<a id="skip-to-content" href="https://www.waterspo.top/#content">Skip to the content.</a>
+		<header class="page-header" role="banner">
+			<h1 class="project-name">
+				<font face="华文隶书" color="#55ffff">&#27426;&#36814;&#26469;&#21040;Sgss's Blogs</font>
+			</h1><a href="https://icp.gov.moe/?keyword=20229994" target="_blank">
+				<font color="#f400a1"><b>萌ICP备20229994号</b></font>
+			</a>
+			<img alt="今日诗词" src="https://v2.jinrishici.com/one.svg?color=DarkRed"
+				style="max-width:100%; display: block; margin: 0 auto;">
+			<h2 class="project-tagline"></h2>
+		</header>
+		<main id="content" class="main-content" role="main">
+			<div>
+				<h2 id="welcome-to-shangguanshenshang-blogs">&#27426;&#36814;&#26469;&#21040;<font face="Arial">Sgss's
+						Blogs</font>
+				</h2>
+			</div>
+			<div style="height:80%; left:75%;">
+				<font size="5px" color="#aa0000"><span id="jinrishici-sentence">正在加载，请稍候....</span></font>
+				<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+			</div>
+			<hr>
+			<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+			<font color="#aa0000" face="楷体, 宋体"><div id="poem_sentence"></div>
+			<div id="poem_info"></div></font>
+			<script type="text/javascript">
+				jinrishici.load(function(result) {
+					var sentence = document.querySelector("#poem_sentence")
+					var info = document.querySelector("#poem_info")
+					sentence.innerHTML = result.data.content
+					info.innerHTML = '【' + result.data.origin.dynasty + '】' + result.data.origin.author + '《' + result.data
+						.origin.title + '》'
+				});
+			</script>
+			<h3 id="友情链接">友情链接</h3>
+			<blockquote>
+				<a href="#"><strike>
+						<font color="#b5b5b5">某全小站网盘</font>
+					</strike></a><br>
+				<a href="https://www.fuibafuyu.cn/">冬優ちゃんの小窝</a><br>
+				<button onclick=replace("https://www.bigtao.xyz")>
+					<img src="https://s1.imagehub.cc/images/2022/09/30/logo.png" width="16" height="16"
+						alt="" />BigTaoの小破站
+				</button><br>
+				<button onclick=replace("https://www.waterspo.top/friend") title="每个人都是星辰">申请友链</button>
+			</blockquote>
+		</main>
+		<div style="width:120%; height: inherit; left: 0%; position:fixed; bottom:0;">
+			<img style="border-radius: 8px"
+				src="https://api.xhofe.top/ip/?line1=欢迎访问本站&line2=本站地址:www.waterspo.top"></img>
+		</div>
+	</body>
 </html>
