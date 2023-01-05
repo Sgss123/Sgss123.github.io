@@ -114,10 +114,10 @@
 						<div class="spa-text">
 							<div class="spa-tit">网站暂时无法访问</div>
 							<div class="spa-desc" style="margin-bottom: 10px">
-								该网站请求的页面不存在。 
+								该网站未根据工信部相关法律规则进行备案。
 							</div>
-							<div class="spa-desc" style="margin-bottom: 10px">
-								返回码：404 - Page Not Found
+							<div class="spa-desc">
+								在中华人民共和国境内提供非经营性互联网信息服务的网站都应依法进行备案，未取得许可或者未履行备案手续的，不得从事互联网信息服务。
 							</div>
 						</div>
 					</div>
@@ -127,7 +127,7 @@
 						<div class="if-common">
 							<div class="ifc">
 								<div class="ifc-tit">如果您是网站普通访客：</div>
-								<div class="ifc-desc">访问正确的页面地址。</div>
+								<div class="ifc-desc">待该网站备案后继续访问。</div>
 							</div>
 						</div>
 						<div class="if-slice"></div>
@@ -135,16 +135,14 @@
 							<div class="ifc">
 								<div class="ifc-tit">如果您是该网站的所有者：</div>
 								<div class="ifc-desc">
-									网站无法访问最常见的原因有以下五点，请您根据自身实际情况完成整改后，方可恢复网站正常访问。
+									网站无法访问最常见的原因有以下三点，请您根据自身实际情况完成整改后，方可恢复网站正常访问。
 								</div>
-								<div class="ifc-desc">1、您的网站访问的文档权限不够。</div>
-								<div class="ifc-desc">2、您的网站防火墙设置不当。</div>
-								<div class="ifc-desc">3、您的网站站点根目录无默认访问文件。</div>
-								<div class="ifc-desc">4、您的网站站点配置目录不正确。</div>
-								<div class="ifc-desc">5、您的网站站点使用了伪静态。</div>
+								<div class="ifc-desc">1、您的网站未完成备案（中国大陆境内提供服务的网站都必须完成备案，若您需要备案可前往接入商备案）。</div>
+								<div class="ifc-desc">2、未在您的接入商完成备案信息的接入。</div>
+								<div class="ifc-desc">3、网站存在不适宜的传播内容。</div>
 								<div class="ifc-desc">
 									若上述内容未解答您的疑问，请前往<a data-sdi="7-0"
-										href="https://www.rfc-editor.org/rfc/">RFC官方网站</a>了解详情。
+										href="https://www.isc.org.cn/category/7456.html">中国互联网协会</a>了解详情。
 								</div>
 							</div>
 						</div>
@@ -152,6 +150,24 @@
 				</div>
 			</div>
 		</div>
+		<script id="sdi_js" aid="2019103118575411963" type="text/javascript"
+			src="//3gimg.qq.com/webapp_scan/sdi/common/sdi_js_full_v2.js"></script>
+		<script>
+			document.querySelectorAll("a").forEach((el) => {
+				el.addEventListener("click", (e) => {
+					try {
+						let tag = e.currentTarget.dataset.sdi;
+						let psArr = tag.split("-");
+						let ptype = psArr[0];
+						let stype = psArr[1];
+						_sdi.stat({
+							ptype: ptype,
+							stype: stype,
+						});
+					} catch (error) {}
+				});
+			});
+		</script>
 	</body>
 </html>
 <!--[if !IE]>|xGv00|8f85bc5ee2a463e0e5c16c474a6dd271<![endif]-->

@@ -1,0 +1,83 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#header {
+	position: fixed;
+	top: 0;
+	background-color: #dcc9c1;
+	width: 100%;
+	height: 60px;
+}
+
+.logo {
+	color: #0c0c01;
+	display: inline-block;
+	line-height: 58px;
+	position: absolute;
+	padding: 20 40px;
+	font-family: "仿宋";
+	font-weight: bold;
+}
+
+ul {
+	list-style: none;
+	display: inline-block;
+	padding-left: 140px;
+}
+
+ul li {
+	line-height: 60px;
+	text-align: center;
+	position: relative;
+	float: left;
+}
+
+a {
+	text-decoration: none;
+	color: rgb(13, 6, 6);
+	display: block;
+	padding: 0 20px;
+	white-space: nowrap;
+	font-family: "仿宋";
+	font-weight: bold;
+}
+
+a:hover {
+	color: #FFF;
+	background-color: #ccc;
+}
+
+ul li ul li {
+	float: none;
+	margin-top: 2px;
+	background-color: #dcc9c1;
+}
+ul li ul li a{
+	padding: 0 10px;
+}
+ul li ul li a:hover {
+	color: #FFF;
+	background-color: #ccc;
+}
+
+ul li ul {
+	position: absolute;
+	left: 0;
+	top: 60px;
+	display: none;
+	padding-left: 0;
+}
+
+ul li:hover ul {
+	display: block;
+}
+
+ul li a:hover {
+	color: gray;
+}
+
+.nav {
+	letter-spacing: 3px;
+}

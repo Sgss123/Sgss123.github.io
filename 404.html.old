@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Error - 404</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		<!--
+		body {
+			background-color: rgb(0, 120, 215);
+			font-family: Helvetica, Arial, sans-serif;
+			color: #FFF;
+			overflow: hidden;
+		}
+
+		.main {
+			position: fixed;
+			left: 13.82%;
+			top: 10%;
+			font-size: 18px;
+		}
+
+		div.main>h1 {
+			font-size: 108px;
+			margin: 20px;
+			margin-left: 0;
+		}
+
+		.sln {
+			position: fixed;
+			font-size: 12px;
+			left: calc(13.82% + 175px);
+			top: calc(10% + 300px);
+		}
+
+		img {
+			height: 150px;
+			width: 150px;
+			position: fixed;
+			top: calc(10% + 300px);
+			left: 13.82%;
+		}
+
+		div.sln>a {
+			color: #FFF;
+		}
+		-->
+	</style>
+</head>
+
+<body>
+	<div class="main">
+		<h1>:(</h1>
+		你访问的页面出现问题，我们无法找到目标文件。<br>
+		错误数据已经提交到服务器日志，现在你可以访问其他页面。<br><br>
+		100%完成<br>
+	</div>
+	<div class="sln">
+		有关此问题的详细信息和可能的解决方法，请访问
+		<br><br>
+		<a href="https://cn.bing.com/search?q=Error%20404">https://cn.bing.com/search?q=Error%20404</a><br><br><br><br>
+		如果希望去必应查找解决方法，请向他们提供一下信息：<br><br>
+		终止代码：HTTP_ERROR_404
+	</div>
+	<img
+		src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQQAAAEEAQMAAAD0xthJAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABlBMVEX///8AeNeqk2f3AAAAAWJLR0QAiAUdSAAAAAlwSFlzAAALEgAACxIB0t1+/AAAAlNJREFUaN7tmUFurDAQRNtiwZIjzFG4GTPczEeZI8ySBaJ/VbmBSPkHmLZiyQGZl0h2t6vLjtlf+842Odtr9Lrg/Rg/MwZn3x4aT0ZUjqz+sbLZbKN7ca9le2i8P+Lpnxnr4b5NFT+rk7QH3t85CTwZ20jNmbPtmnDGF5mM/p4Py0lEns4H4ksCX+y/mfz9hJRkRY4uUJeCJ2dbfmlQH0Rr+IJdiResBxXmd4VIQgwtpqXlactRzJYqk4uYKr/oqaiBYn4ienv8gb6I5z6pql+/gbVArtqw5SPYF6oLFd8Z5/dMlRnQuyPcd0P2hsJ46CnVZbw0KA1xDHRXZkvszIL6xtju4znbLAS+DJ953eiN6TsmbzXbFL3eCDkUY4fbgitpftlZ1c/YpiFMTos1IXyyh0/24ax3iYh154xd3WOvsX6fyt8X8Ro+UpgnRqUwWA/4zOpbNgJxjbpN9Q+3OFNl9lstOyJe6iaVKa2bvFg+otIXPzeddHRaw5eq2vDDW2YhFvlknGG035izZs3/n8rfD0E9vfP19MjMUz6zEWu7p1OucqbyyYjrj9qQhGDkWm4W1bjJ9Q7qPr/0Q2D+e9wbyCOrgb49fybCBjotORXVttuhRJ52RLS1OBTPpq3U0rYs2YiIr7yye4nZxqwtFxE5Gqc13Tliv7W74FCYnogamlpN52yNyqVcbisRwZtv3Z/GaY21uoTSZCT0n7Ox7b3rzvFyKP0R7f8WJpdCT/lQvctGMC/bbNvNFdWS1N4joZR9xUnniDM2PeZ9WstC/LVvbP8AcIOSJljIwrwAAABDdEVYdHNvZnR3YXJlAGZpbGU6Ly8vdXNyL3NoYXJlL2RvYy9pbWFnZW1hZ2ljay02LWNvbW1vbi9odG1sL2luZGV4Lmh0bWwP1+U4AAAAGHRFWHRUaHVtYjo6RG9jdW1lbnQ6OlBhZ2VzADGn/7svAAAAFnRFWHRUaHVtYjo6SW1hZ2U6OkhlaWdodAAwYCNLlgAAABV0RVh0VGh1bWI6OkltYWdlOjpXaWR0aAAwrU2vSwAAABZ0RVh0VGh1bWI6Ok1pbWV0eXBlAGltYWdlL9OcZGsAAAAPdEVYdFRodW1iOjpTaXplADBCQpSiPuwAAAASdEVYdFRodW1iOjpVUkkAZmlsZTovL8F3i88AAAAASUVORK5CYII=">
+</body>
+
+</html>

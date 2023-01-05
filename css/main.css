@@ -1,0 +1,18 @@
+.Heading {
+	background-image: linear-gradient(to bottom right, blue, green);
+	background-repeat: no-repeat;
+}
+
+#title {
+	color: aqua;
+}
+
+.HeadTitle {
+	position: relative;
+}
+
+.HomeCover {
+	position: relative;
+	left: 20px;
+	width: 50%;
+}
