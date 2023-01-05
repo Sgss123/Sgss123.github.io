@@ -1,7 +1,3 @@
-footer {
-	background-color: #dcc9c1;
-}
-
 a {
 	text-decoration: none;
 	color: rgb(13, 6, 6);
@@ -13,12 +9,7 @@ a {
 }
 
 a:hover {
-	color: #FFF;
-	background-color: #ccc;
-}
-
-.footer {
-	background-color: #dcc9c1;
+	color: #a8a8a8;
 }
 
 .mod_help {
@@ -30,7 +21,7 @@ a:hover {
 
 .mod_help dl {
 	float: left;
-	width: 200px;
+	width: auto;
 }
 
 .mod_help dl dt {
@@ -39,8 +30,7 @@ a:hover {
 }
 
 .mod_help a:hover {
-	color: #FFF;
-	background-color: #dcc9c1;
+	color: #a8a8a8;
 }
 
 /*为最后一个dl显示二维码设置样式*/
@@ -64,8 +54,7 @@ a:hover {
 }
 
 .links a:hover {
-	color: #FFF;
-	background-color: #dcc9c1;
+	color: #a8a8a8;
 }
 
 .copyright {

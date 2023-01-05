@@ -1,39 +1,93 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Sgss小破站</title>
+		<title>Sgss小破站 H5版</title>
+		<link rel="stylesheet" type="text/css" href="css/nav.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
 	</head>
-	<!-- <style>
-		body {
-			background: url(image/bg.png);
-		}
-	</style> -->
-	<script src="js/index.js"></script>
-	<script type="text/javascript">
-		/* 手机打开提示 */
-		var mobileAgent = new Array("iphone", "ipod", "ipad", "android", "mobile", "blackberry", "webos", "incognito",
-			"webmate", "bada", "nokia", "lg", "ucweb", "skyfire");
-		var browser = navigator.userAgent.toLowerCase();
-		var isMobile = false;
-		for (var i = 0; i < mobileAgent.length; i++) {
-			if (browser.indexOf(mobileAgent[i]) != -1) {
-				isMobile = true;
-				alert("本网站暂未适配手机，建议使用电脑访问效果最佳！点击确定继续使用手机浏览");
-				break;
-			}
-		}
-	</script>
-	<frameset framespacing="0" frameborder="0" rows="57,64%,*">
-		<frame name="Hearer" scrolling="no" src="Header.html">
-			<frame name="main" scrolling="auto" src="main.html">
-			<frame name="Footer" scrolling="no" src="Footer.html">
-		<noframes>
-			<body>
-				
-				<p>该网站使用了框架，但是您的浏览器并不支持。</p>
-				
-			</body>
-		<noframes>
-	</frameset>
+	<body>
+		<div id="header">
+			<div class="logo">
+				<p style="font-size: 20px;">&#128213;&nbsp;Sgss小破站</p>
+			</div>
+			<ul>
+				<li class="nav"><a href="/">主页</a></li>
+				<li>
+					<center><a class="nav">友情链接</a></center>
+					<ul>
+						<li><a href="http://ser.chk.asia/link.php?d=https://bigtao.xyz">Bigtao小破站</a></li>
+						<li><a href="http://ser.chk.asia/link.php?d=https://blog.maxwenyan23.top">Max的blog</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<br><br><br>
+		<div id="body">
+			<div class="main_page">
+				<iframe scrolling="auto" id="mainFrame" name="mainFrame" frameborder="0" src="webclose.html"
+					style="min-height:600px;width:100%;height:100%;"></iframe>
+			</div>
+			<script>
+				// 计算页面的实际高度，iframe自适应会用到
+				function calcPageHeight(doc) {
+					var cHeight = Math.max(doc.body.clientHeight, doc.documentElement.clientHeight);
+					var sHeight = Math.max(doc.body.scrollHeight, doc.documentElement.scrollHeight);
+					var height = Math.max(cHeight, sHeight);
+					return height;
+				};
+				//根据ID获取iframe对象
+				var ifr = document.getElementById('mainFrame');
+				ifr.onload = function() {
+					//解决打开高度太高的页面后再打开高度较小页面滚动条不收缩
+					ifr.style.height = '0px';
+					var iDoc = ifr.contentDocument || ifr.document;
+					var height = calcPageHeight(iDoc);
+					if (height < 850) {
+						height = 850;
+					}
+			  ifr.style.height = height + 'px';
+				}
+			</script>
+		</div>
+		<script src="js/index.js"></script>
+		<footer>
+			<div class='mod_help'>
+				<dl>
+					<dt>子站</dt>
+					<dd><a href='#' target="main">待添加</a></dd>
+					<dd><a href='#' target="main">待添加</a></dd>
+					<dd><a href='#' target="main">待添加</a></dd>
+				</dl>
+				<dl>
+					<dt>友情链接</dt>
+					<dd><a href='http://ser.chk.asia/link.php?d=https://bigtao.xyz' title='每个人都是星辰'
+							target="_blank">Bigtao小破站</a></dd>
+					<dd><a href='http://ser.chk.asia/link.php?d=https://blog.maxwenyan23.top'
+							target="_blank">Max温焰的blog</a></dd>
+					<dd>
+						<a href='/friend/index2.html' target="mainFrame"><img src='image/ws.png' />申请友链</a>
+					</dd>
+				</dl>
+				<dl>
+					<dt>付费服务</dt>
+					<dd><a href='#'>没有这玩意</a></dd>
+				</dl>
+			</div>
+			<div class='mod_copyright'>
+				<div class='links'>
+					<a href='http://ser.chk.asia/link.php?d=https://space.bilibili.com/531522938'
+						target="mainFrame">站长B站</a>|
+					<a href='http://ser.chk.asia/link.php?d=mailto:2269718601@qq.com' target="_blank">联系我们</a>
+				</div>
+				<div class='copyright'>
+					Copyright ©<span id='Date'>
+						<script>
+							getDate()
+						</script>
+					</span> Sgss All Rights Reserved.
+				</div>
+			</div>
+		</footer>
+	</body>
 </html>

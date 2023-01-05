@@ -21,20 +21,20 @@
 	font-weight: bold;
 }
 
-ul {
+#header ul {
 	list-style: none;
 	display: inline-block;
 	padding-left: 140px;
 }
 
-ul li {
+#header ul li {
 	line-height: 60px;
 	text-align: center;
 	position: relative;
 	float: left;
 }
 
-a {
+#header a {
 	text-decoration: none;
 	color: rgb(13, 6, 6);
 	display: block;
@@ -44,25 +44,25 @@ a {
 	font-weight: bold;
 }
 
-a:hover {
+#header a:hover {
 	color: #FFF;
 	background-color: #ccc;
 }
 
-ul li ul li {
+#header ul li ul li {
 	float: none;
 	margin-top: 2px;
 	background-color: #dcc9c1;
 }
-ul li ul li a{
+#header ul li ul li a{
 	padding: 0 10px;
 }
-ul li ul li a:hover {
+#header ul li ul li a:hover {
 	color: #FFF;
 	background-color: #ccc;
 }
 
-ul li ul {
+#header ul li ul {
 	position: absolute;
 	left: 0;
 	top: 60px;
@@ -70,11 +70,11 @@ ul li ul {
 	padding-left: 0;
 }
 
-ul li:hover ul {
+#header ul li:hover ul {
 	display: block;
 }
 
-ul li a:hover {
+#header ul li a:hover {
 	color: gray;
 }
 

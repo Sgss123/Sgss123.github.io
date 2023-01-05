@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Sgss小破站</title>
+	</head>
+	<!-- <style>
+		body {
+			background: url(image/bg.png);
+		}
+	</style> -->
+	<script src="js/index.js"></script>
+	<script type="text/javascript">
+		/* 手机打开提示 */
+		var mobileAgent = new Array("iphone", "ipod", "ipad", "android", "mobile", "blackberry", "webos", "incognito",
+			"webmate", "bada", "nokia", "lg", "ucweb", "skyfire");
+		var browser = navigator.userAgent.toLowerCase();
+		var isMobile = false;
+		for (var i = 0; i < mobileAgent.length; i++) {
+			if (browser.indexOf(mobileAgent[i]) != -1) {
+				isMobile = true;
+				alert("本网站暂未适配手机，建议使用电脑访问效果最佳！点击确定继续使用手机浏览");
+				break;
+			}
+		}
+	</script>
+	<frameset framespacing="0" frameborder="0" rows="57,64%,*">
+		<frame name="Hearer" scrolling="no" src="Header.html">
+			<frame name="main" scrolling="auto" src="main.html">
+			<frame name="Footer" scrolling="no" src="Footer.html">
+		<noframes>
+			<body>
+				
+				<p>该网站使用了框架，但是您的浏览器并不支持。</p>
+				
+			</body>
+		<noframes>
+	</frameset>
+</html>
