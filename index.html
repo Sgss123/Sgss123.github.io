@@ -1,59 +1,61 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<title>Sgss小破站 H5版</title>
-		<link rel="stylesheet" type="text/css" href="css/nav.css" />
-		<link rel="stylesheet" type="text/css" href="css/index.css" />
-	</head>
-	<body>
-		<div id="header">
-			<div class="logo">
-				<p style="font-size: 20px;">&#128213;&nbsp;Sgss小破站</p>
-			</div>
-			<ul>
-				<li class="nav"><a href="/">主页</a></li>
-				<li>
-					<center><a class="nav">友情链接</a></center>
-					<ul>
-						<li><a href="http://ser.chk.asia/link.php?d=https://bigtao.xyz">Bigtao小破站</a></li>
-						<li><a href="http://ser.chk.asia/link.php?d=https://blog.maxwenyan23.top">Max的blog</a></li>
-						<li><a href="friend/index2.html" target="mainFrame">申请友链</a></li>
-					</ul>
-				</li>
-			</ul>
+
+<head>
+	<meta charset="utf-8">
+	<title>Sgss小破站 H5版</title>
+	<link rel="stylesheet" type="text/css" href="css/nav.css" />
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+</head>
+
+<body>
+	<div id="header">
+		<div class="logo">
+			<p style="font-size: 20px;">&#128213;&nbsp;Sgss小破站</p>
 		</div>
-		<br><br><br>
-		<div id="body">
-			<div class="main_page">
-				<iframe scrolling="auto" id="mainFrame" name="mainFrame" frameborder="0" src="index_1.html"
-					style="min-height:540px;width:100%;height:100%;"></iframe>
-			</div>
-			<script>
-				// 计算页面的实际高度，iframe自适应会用到
-				function calcPageHeight(doc) {
-					var cHeight = Math.max(doc.body.clientHeight, doc.documentElement.clientHeight);
-					var sHeight = Math.max(doc.body.scrollHeight, doc.documentElement.scrollHeight);
-					var height = Math.max(cHeight, sHeight);
-					return height;
-				};
-				//根据ID获取iframe对象
-				var ifr = document.getElementById('mainFrame');
-				ifr.onload = function() {
-					//解决打开高度太高的页面后再打开高度较小页面滚动条不收缩
-					ifr.style.height = '0px';
-					var iDoc = ifr.contentDocument || ifr.document;
-					var height = calcPageHeight(iDoc);
-					if (height < 850) {
-						height = 850;
-					}
-			  ifr.style.height = height + 'px';
+		<ul>
+			<li class="nav"><a href="/">主页</a></li>
+			<li>
+				<center><a class="nav">友情链接</a></center>
+				<ul>
+					<li><a href="http://ser.chk.asia/link.php?d=https://bigtao.xyz">Bigtao小破站</a></li>
+					<li><a href="http://ser.chk.asia/link.php?d=https://blog.maxwenyan23.top">Max的blog</a></li>
+					<li><a href="friend/index2.html" target="mainFrame">申请友链</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<br><br><br>
+	<div id="body">
+		<div class="main_page">
+			<iframe scrolling="auto" id="mainFrame" name="mainFrame" frameborder="0" src="index_1.html"
+				style="min-height:540px;width:100%;height:100%;"></iframe>
+		</div>
+		<script>
+			// 计算页面的实际高度，iframe自适应会用到
+			function calcPageHeight(doc) {
+				var cHeight = Math.max(doc.body.clientHeight, doc.documentElement.clientHeight);
+				var sHeight = Math.max(doc.body.scrollHeight, doc.documentElement.scrollHeight);
+				var height = Math.max(cHeight, sHeight);
+				return height;
+			};
+			//根据ID获取iframe对象
+			var ifr = document.getElementById('mainFrame');
+			ifr.onload = function () {
+				//解决打开高度太高的页面后再打开高度较小页面滚动条不收缩
+				ifr.style.height = '0px';
+				var iDoc = ifr.contentDocument || ifr.document;
+				var height = calcPageHeight(iDoc);
+				if (height < 850) {
+					height = 850;
 				}
-			</script>
-		</div>
-		<script src="js/index.js"></script>
-		<footer>
-			<!-- <div class='mod_help'>
+				ifr.style.height = height + 'px';
+			}
+		</script>
+	</div>
+	<script src="js/index.js"></script>
+	<footer>
+		<!-- <div class='mod_help'>
 				<dl>
 					<dt>子站</dt>
 					<dd><a href='#' target="main">待添加</a></dd>
@@ -75,20 +77,20 @@
 					<dd><a href='#'>没有这玩意</a></dd>
 				</dl>
 			</div> -->
-			<div class='mod_copyright'>
-				<div class='links'>
-					<a href='http://ser.chk.asia/link.php?d=https://space.bilibili.com/531522938'
-						target="_blank">站长B站</a>|
-					<a href='http://ser.chk.asia/link.php?d=mailto:2269718601@qq.com' target="_blank">联系我们</a>
-				</div>
-				<div class='copyright'>
-					Copyright ©<span id='Date'>
-						<script>
-							getDate()
-						</script>
-					</span> Sgss All Rights Reserved.
-				</div>
+		<div class='mod_copyright'>
+			<div class='links'>
+				<a href='http://ser.chk.asia/link.php?d=https://space.bilibili.com/531522938' target="_blank">站长B站</a>|
+				<a href='http://ser.chk.asia/link.php?d=mailto:2269718601@qq.com' target="_blank">联系我们</a>
 			</div>
-		</footer>
-	</body>
+			<div class='copyright'>
+				Copyright ©<span id='Date'>
+					<script>
+						getDate()
+					</script>
+				</span> Sgss All Rights Reserved.
+			</div>
+		</div>
+	</footer>
+</body>
+
 </html>

@@ -3,12 +3,11 @@
 <head>
 	<meta http-equiv=Content-Type content="text/html; charset=utf-8">
 	<title>友链申请</title>
-	<link rel="stylesheet" type="text/css" href="../css/nav.css" />
-	<link rel="stylesheet" type="text/css" href="../css/footer.css" />
+	<link type="text/css" rel="stylesheet" href="../css/friendlink.css" />
 </head>
 
 <body>
-	<div style='layout-grid:15.6pt'>
+	<!-- <div style='layout-grid:15.6pt'>
 
 		<p align=center style='text-align:center'>申请<span>友链请</span>按照以下格式：
 		</p>
@@ -25,30 +24,26 @@
 		<p align=center style='text-align:center'><span lang=EN-US><span
 					style='mso-spacerun:yes'> </span></span>邮箱：<span lang=EN-US> XXXXXXXXXX@XXX.XXX</span></p>
 
-	</div>
-
-	<div>
-		<center>
-			<form action="mailto:support@xn--fhq534awnm5on.top" method="post" enctype="text/plain">
-				<img src="../image/one.svg"><br>
-				贵站昵称：<br>
-				<input type="text" name="name" value="Your Website' s name" size="20">
-				<br>
-				贵站网址：<br>
-				<input type="text" name="mail" value="URL" size="20">
-				<br>
-				贵站简介：<br>
-				<input type="text" name="comment" value="Your Website' s comment" size="40">
-				<br>
-				贵站Logo（非必选）：<br>
-				<input type="text" name="comment" value="Your Website' s Logo" size="40">
-				<br>
-				<input type="submit" value="发送">
-				<input type="reset" value="重置">
+	</div> -->
+	<div class="sendEmail">
+		<div class="image"></div>
+		<div class="content">
+			<div class="conmain">
+				<h1>快速申请友情链接：</h1>
+				<form action="javascript:OpenEmail()" id="content" method="post" enctype="text/plain">
+					<p>您好，<a href="https://waterspo.top">网站站长</a>：</p>
+					<input type="text" class="inputBox" id="name" placeholder="您的网站昵称" value="贵站昵称：">
+					<input type="text" class="inputBox" id="link" placeholder="您的网站链接" value="贵站链接：">
+					<input type="text" class="inputBox" id="comment" placeholder="您的网站简介" value="贵站简介：">
+					<input type="text" class="inputBox" id="Logo" placeholder="您的网站Logo(请填写URL)" value="贵站的Logo链接：">
+					<input type="submit" class="send" value="发送">
+					<a class="reset" href="javascript:location.reload();">重置</a>
+				</form>
 				<p>如果您使用QQ邮箱，请您前往<a href="https://mail.qq.com">QQ邮箱</a>发件</p>
-			</form>
-		</center>
+			</div>
+		</div>
 	</div>
+	<script src="../js/friendlink.js"></script>
 </body>
 
 </html>
