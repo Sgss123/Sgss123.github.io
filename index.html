@@ -30,28 +30,19 @@
 		<div class="main_page">
 			<iframe scrolling="auto" id="mainFrame" name="mainFrame" frameborder="0" src="index_1.html"
 				style="min-height:540px;width:100%;height:100%;"></iframe>
+				<script type="text/javascript">
+					function reinitIframe() {
+						var iframe = document.getElementById("mainFrame");
+						try {
+							var bHeight = iframe.contentWindow.document.body.scrollHeight;
+							var dHeight = iframe.contentWindow.document.documentElement.scrollHeight;
+							var height = Math.max(bHeight, dHeight);
+							iframe.height = height;
+						} catch (ex) { }
+					}
+					window.setInterval("reinitIframe()", 200);
+				</script>
 		</div>
-		<script>
-			// 计算页面的实际高度，iframe自适应会用到
-			function calcPageHeight(doc) {
-				var cHeight = Math.max(doc.body.clientHeight, doc.documentElement.clientHeight);
-				var sHeight = Math.max(doc.body.scrollHeight, doc.documentElement.scrollHeight);
-				var height = Math.max(cHeight, sHeight);
-				return height;
-			};
-			//根据ID获取iframe对象
-			var ifr = document.getElementById('mainFrame');
-			ifr.onload = function () {
-				//解决打开高度太高的页面后再打开高度较小页面滚动条不收缩
-				ifr.style.height = '0px';
-				var iDoc = ifr.contentDocument || ifr.document;
-				var height = calcPageHeight(iDoc);
-				if (height < 850) {
-					height = 850;
-				}
-				ifr.style.height = height + 'px';
-			}
-		</script>
 	</div>
 	<script src="js/index.js"></script>
 	<footer>
