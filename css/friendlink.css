@@ -19,23 +19,23 @@ body {
 }
 
 .image {
-    width: 800px;
+    width: 550px;
     height: 550px;
-    background-image: url("../image/header.jpg");
+    background-image: url("../image/ws.png");
     background-size: cover;
 }
 
 .content {
-    width: 300px;
+    width: 550px;
     height: 550px;
     background-color: white;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
 }
 
 .conmain {
-    width: 250px;
+    width: 500px;
     height: 500px;
 }
 
@@ -44,7 +44,7 @@ body {
 }
 
 .inputBox {
-    width: 200px;
+    width: 400px;
     margin: 10px 0;
     outline: none;
     border: 0;

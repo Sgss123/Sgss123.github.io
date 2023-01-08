@@ -1,9 +1,11 @@
-#body{
+#body {
 	height: 70%;
 }
-#end{
+
+#end {
 	width: 100%;
 }
+
 a {
 	text-decoration: none;
 	color: rgb(13, 6, 6);
@@ -65,4 +67,11 @@ a:hover {
 
 .copyright {
 	line-height: 20px;
+}
+
+#mainFrame {
+	min-height: 540px;
+	width: 100%;
+	height: 969px;
+	top:60px;
 }
