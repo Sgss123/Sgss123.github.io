@@ -6,7 +6,7 @@
 #header {
 	position: relative;
 	top: 0;
-	background-color: #dcc9c1;
+	background-image: url("../image/nav.svg");
 	width: 100%;
 	height: 60px;
 }

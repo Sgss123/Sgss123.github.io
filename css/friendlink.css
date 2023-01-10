@@ -4,9 +4,12 @@
 }
 
 body {
-    background-image: linear-gradient(to left, #9c88ff, #3cadeb);
+    background-image: url("../image/Heppy.jpg");
     display: flex;
     justify-content: center;
+    background-size: 100% 200%;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
 }
 
 .sendEmail {
@@ -29,7 +32,6 @@ body {
 .content {
     width: 550px;
     height: 550px;
-    background-color: white;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -52,11 +54,23 @@ body {
     padding: 5px;
     border-bottom: 3px solid rgb(80, 80, 170);
     font: 900 16px '';
+    background: rgba(0, 0, 0, 0);
 }
 
 .reset {
-    float: right;
-    margin: 10px 0;
+    position: absolute;
+    margin: 20px;
+    bottom: 40px;
+    display: block;
+    width: 200px;
+    height: 60px;
+    font: 900 30px '';
+    text-decoration: none;
+    line-height: 50px;
+    border-radius: 30px;
+    background-image: linear-gradient(to left, #3cadeb, #9c88ff);
+    text-align: center;
+    right: 40px;
 }
 
 .send {
@@ -70,10 +84,23 @@ body {
     text-decoration: none;
     line-height: 50px;
     border-radius: 30px;
-    background-image: linear-gradient(to left,#9c88ff, #3cadeb);
+    background-image: linear-gradient(to left, #9c88ff, #3cadeb);
     text-align: center;
 }
 
-.a{
-    font-size: 10px;
+p,
+a {
+    font-size: 20px;
+    font-family: "黑体","宋体","楷体";
+    font-weight: bold;
+}
+p{
+    color:black
+}
+a{
+    text-decoration: none;
+    color: blue;
+}
+a:hover{
+    color: gray;
 }
