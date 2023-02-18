@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: "思源黑体 Normal";
+  src: url(Source_Han_Sans_SC_Normal_Normal.otf);
+}
+
+@font-face {
+  font-family: "思源黑体 Light";
+  src: url(Source_Han_Sans_SC_Light_Light.otf);
+}
+
+@font-face {
+  font-family: "思源黑体 Bold";
+  src: url(Source_Han_Sans_SC_Bold.otf);
+}
+
+@font-face {
+  font-family: "思源黑体 Heavy";
+  src: url(Source_Han_Sans_SC_Heavy_Heavy.otf);
+}
+
+@font-face {
+  font-family: "思源黑体 ExtraLight";
+  src: url(Source_Han_Sans_SC_ExtraLight_ExtraLight.otf);
+}
+
+@font-face {
+  font-family: "思源黑体 Medium";
+  src: url(Source_Han_Sans_SC_Medium_Medium.otf);
+}
+
+@font-face {
+  font-family: "思源黑体 Regular";
+  src: url(Source_Han_Sans_SC_Regular.otf);
+}
+
+@font-face {
+  font-family: "中文像素 Chinese Pixel";
+  src: url(ipix_12px.ttf);
+}

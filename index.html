@@ -1,115 +1,164 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<title>Sgss小破站 H5版</title>
-	<link rel="stylesheet" type="text/css" href="/static/css/nav.css" />
-	<link rel="stylesheet" type="text/css" href="/static/css/index.css" />
+    <meta charset="UTF-8">
+    <title>Chunk-gz | Sgss新网站</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="/static/css/global.css"> -->
+    <link rel="stylesheet" href="/static/plugins/bootstrap-5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/plugins/fontawesome-free-6.2.1-web/css/all.min.css">
+    <link rel="stylesheet" href="/static/plugins/font_3878771_1u1xusjlsd7/iconfont.css">
+    <link rel="stylesheet" href="/static/css/custom.css">
+    <style>
+        .icon {
+            width: 1em;
+            height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+    </style>
+    <!--[if lt IE 9]>
+        <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+    <![endif]-->
 </head>
 
 <body>
-	<div id="header">
-		<div class="logo">
-			<p style="font-size: 20px;">&#128213;&nbsp;Sgss小破站</p>
-		</div>
-		<ul>
-			<li class="nav"><a href="/">主页</a></li>
-			<li><a href="//www.chk.asia">新主页</a></li>
-			<li>
-				<center><a class="nav">友情链接</a></center>
-				<ul>
-					<li><a href="//bigtao.xyz">Bigtao小破站</a></li>
-					<li><a href="//blog.maxwenyan23.top">Max的blog</a></li>
-					<li><a href="friend/index2.html" target="mainFrame">申请友链</a></li>
-				</ul>
-			</li>
-		</ul>
-	</div>
-	<div class="body">
-		<div class="main_page">
-			<iframe scrolling="auto" id="mainFrame" name="mainFrame" frameborder="0" src="index_1.html"></iframe>
-			<script type="text/javascript">
-				//** iframe自动适应页面 **// 
-				//输入你希望根据页面高度自动调整高度的iframe的名称的列表 
-				//用逗号把每个iframe的ID分隔. 例如: ["myframe1", "myframe2"]，可以只有一个窗体，则不用逗号。 
-				//定义iframe的ID 
-				var iframeids = ["mainFrame"]
-				//如果用户的浏览器不支持iframe是否将iframe隐藏 yes 表示隐藏，no表示不隐藏 
-				var iframehide = "yes"
-				function dyniframesize() {
-					var dyniframe = new Array()
-					for (i = 0; i < iframeids.length; i++) {
-						if (document.getElementById) {
-							//自动调整iframe高度 
-							dyniframe[dyniframe.length] = document.getElementById(iframeids);
-							if (dyniframe && !window.opera) {
-								dyniframe.style.display = "block"
-								if (dyniframe.contentDocument && dyniframe.contentDocument.body.offsetHeight) //如果用户的浏览器是NetScape 
-									dyniframe.height = dyniframe.contentDocument.body.offsetHeight;
-								else if (dyniframe.Document && dyniframe.Document.body.scrollHeight) //如果用户的浏览器是IE 
-									dyniframe.height = dyniframe.Document.body.scrollHeight;
-							}
-						}
-						//根据设定的参数来处理不支持iframe的浏览器的显示问题 
-						if ((document.all || document.getElementById) && iframehide == "no") {
-							var tempobj = document.all ? document.all[iframeids] : document.getElementById(iframeids)
-							tempobj.style.display = "block"
-						}
-					}
-				}
-				if (window.addEventListener)
-					window.addEventListener("load", dyniframesize, false)
-				else if (window.attachEvent)
-					window.attachEvent("onload", dyniframesize)
-				else
-					window.onload = dyniframesize 
-			</script>
-		</div>
-	</div>
-	<script src="/static/js/index.js"></script>
-	<footer>
-		<!-- <div class='mod_help'>
-				<dl>
-					<dt>子站</dt>
-					<dd><a href='#' target="main">待添加</a></dd>
-					<dd><a href='#' target="main">待添加</a></dd>
-					<dd><a href='#' target="main">待添加</a></dd>
-				</dl>
-				<dl>
-					<dt>友情链接</dt>
-					<dd><a href='http://ser.chk.asia/link.php?d=https://bigtao.xyz' title='每个人都是星辰'
-							target="_blank">Bigtao小破站</a></dd>
-					<dd><a href='http://ser.chk.asia/link.php?d=https://blog.maxwenyan23.top'
-							target="_blank">Max温焰的blog</a></dd>
-					<dd>
-						<a href='/friend/index2.html' target="mainFrame"><img src='image/ws.png' />申请友链</a>
-					</dd>
-				</dl>
-				<dl>
-					<dt>付费服务</dt>
-					<dd><a href='#'>没有这玩意</a></dd>
-				</dl>
-			</div> -->
-		<div class='mod_copyright'>
-			<div class='links'>
-				<a href='http://ser.chk.asia/link.php?d=https://space.bilibili.com/531522938' target="_blank">站长B站</a>|
-				<a href='mailto:2269718601@qq.com' target="_blank">联系我们</a>|
-				<a href="friend/index2.html" target="mainFrame">申请友链</a>|
-				<a href="https://icp.gov.moe/?keyword=20221503" target="_blank">
-					<font color="#f400a1"><b>萌ICP备20229994号</b></font>
-				</a>
-			</div>
-			<div class='copyright'>
-				<script src="/static/js/Function.js"></script>
-				Copyright ©<span id='Date'>
-					<script>
-						getDate()
-					</script>
-				</span> Sgss All Rights Reserved.
-			</div>
-		</div>
-	</footer>
+    <!--[if lt IE 9]>
+        <h1>您的浏览器内核已经低于HTML5最低兼容的Internet Explorer 9，可能会与网站所有者的显示有极大的差异，建议使用<a href="https://www.microsoft.com/zh-cn/edge">Microsoft Edge</a>。</h1>
+    <![endif]-->
+    <!--[if IE 9]>
+        <h1>您的浏览器为Internet Explorer 9，本网站的内容几乎无法显示，请使用Internet Explorer 10以上或Chromium内核的浏览器，建议使用<a href="https://www.microsoft.com/zh-cn/edge">Microsoft Edge</a>。</h1>
+    <![endif]-->
+    <!--[if IE]>
+        <h1>检测到您的浏览器为IE内核，本网站的部分内容可能不会正常显示，建议使用Chromium内核的浏览器，推荐使用<a href="https://www.microsoft.com/zh-cn/edge">Microsoft Edge</a>。</h1>
+    <![endif]-->
+    <!-- 导航栏 -->
+    <div class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand d-inline-block align-text-top" href="/">&#128213;&nbsp;Sgss小破站</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page"
+                            href="https://www.waterspo.top?form=newsite">返回旧网站</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/about">自我介绍</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="javascript:;" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            友情链接
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="javascript:;"
+                                    onclick="window.location.replace('https://sec.xiaolizi.fun')">极语言</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="/friend">申请友链</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <marquee behavior="scroll" direction="left" onmouseover="this.stop()" onmouseout="this.start()"
+                            class="nav-link"
+                            style="width: 180px;color: orange;cursor: pointer;font-size: 17px;font-family: '黑体','楷体';">
+                            <b>
+                                温馨提示：您正在访问的是新网站；新网站暂未建设完毕，如需浏览完整内容请移步至<a href="https://www.waterspo.top">旧网站</a>，谢谢！
+                                Notice: you are visiting a new website; The new website has not been completed yet. If
+                                you want to browse the complete content, please move to <a
+                                    href="https://www.waterspo.top">the old website</a>. Thank you!</b>
+                        </marquee>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="javascript:;" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-windows"></use>
+                            </svg>Windows快速工具
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="ms-settings://"><i class="iconfont icon-set"></i>设置</a>
+                            </li>
+                            <li><a class="dropdown-item" href="ms-windows-store://">微软商店</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="minecraft://">Minecraft(Windows 10)</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="在网页中搜索" aria-label="在网页中搜索">
+                    <button class="btn btn-outline-success" type="submit"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="body">
+    </div>
+    <!-- 版权声明 -->
+    <div class="footer">
+        <!-- 用div是兼容IE最后的倔强 -->
+        <div class="wapper">
+            <div class="top">
+                <ul>
+                    <!-- QQ联系:https://wpa.qq.com/msgrd?v=3&uin=2269718601&site=qq&menu=yes -->
+                    <li><a href="tencent://message/?uin=2269718601&Site=https://chk.asia&Menu=yes"
+                            style="color: black;"><svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-QQ"></use>
+                            </svg>联系我</a>
+                    </li>
+                    <!-- 邮箱联系：http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=KFtPW1tMQVtoXkFYBllZBktHRQ -->
+                    <li><a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=KFtPW1tMQVtoXkFYBllZBktHRQ"
+                            target="_blank" style="color: black;"><svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-mail"></use>
+                            </svg>给我发信</a></li>
+                    <!-- B站联系：https://message.bilibili.com/#/whisper/mid531522938 -->
+                    <li><a href="//message.bilibili.com/#/whisper/mid531522938" target="_blank"
+                            style="color: black;"><svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-bilibili"></use>
+                            </svg>联系我</a></li>
+                    <!-- <li></li> -->
+                </ul>
+            </div>
+            <div class="bottom">
+                <p>
+                    <a href="/about" class="footerlink">关于我</a>&nbsp;|
+                    <a href="/friend" class="footerlink">申请友链</a>&nbsp;|
+                    <a href="//wpa.qq.com/msgrd?v=3&uin=2269718601&site=qq&menu=yes" target="_blank"
+                        class="footerlink">QQ联系我</a>&nbsp;|
+                    <a href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=KFtPW1tMQVtoXkFYBllZBktHRQ"
+                        target="_blank" class="footerlink">给我发邮件</a>&nbsp;|
+                    <a href="//message.bilibili.com/#/whisper/mid531522938" target="_blank"
+                        class="footerlink">B站私信我</a>&nbsp;|
+                    <a href="//space.bilibili.com/531522938" target="_blank" class="footerlink">站长B站</a>
+                </p>
+                <p style="color: bisque;">Copyright &COPY; 2022-<span id="date"></span> Sgss All Rights Reserved.
+                </p>
+                <script>
+                    var d = new Date();
+                    var x = document.getElementById("date");
+                    x.innerHTML = d.getFullYear();
+                </script>
+            </div>
+        </div>
+    </div>
+    <!-- 脚本引入 -->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="/static/js/jquery-3.6.3.min.js"></script>
+    <script src="/static/plugins/bootstrap-5.3.0/js/bootstrap.min.js"></script>
+    <script src="/static/plugins/font_3878771_1u1xusjlsd7/iconfont.js"></script>
+
 </body>
 
 </html>

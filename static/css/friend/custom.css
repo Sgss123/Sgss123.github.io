@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("/static/img/Happy.jpg");
+    /* display: flex; */
+    justify-content: center;
+    background-size: 100% 70%;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+}
+
+.sendEmail {
+    position: relative;
+    margin: auto;
+    width: 1100px;
+    height: 550px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .8);
+    display: flex;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.image {
+    width: 550px;
+    height: 550px;
+    background-image: url("/static/img/ws.png");
+    background-size: cover;
+}
+
+.content {
+    width: 550px;
+    height: 550px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.conmain {
+    width: 500px;
+    height: 500px;
+}
+
+.conmain h1 {
+    font: 900 30px '';
+}
+
+.inputBox {
+    width: 400px;
+    margin: 10px 0;
+    outline: none;
+    border: 0;
+    padding: 5px;
+    border-bottom: 3px solid rgb(80, 80, 170);
+    font: 900 16px '';
+    background: rgba(0, 0, 0, 0);
+}
+
+.reset {
+    position: absolute;
+    margin: 20px;
+    bottom: 40px;
+    display: block;
+    width: 200px;
+    height: 60px;
+    font: 900 30px '';
+    text-decoration: none;
+    line-height: 50px;
+    border-radius: 30px;
+    background-image: linear-gradient(to left, #3cadeb, #9c88ff);
+    text-align: center;
+    right: 40px;
+}
+
+.send {
+    position: absolute;
+    margin: 20px;
+    bottom: 40px;
+    display: block;
+    width: 200px;
+    height: 60px;
+    font: 900 30px '';
+    text-decoration: none;
+    line-height: 50px;
+    border-radius: 30px;
+    background-image: linear-gradient(to left, #9c88ff, #3cadeb);
+    text-align: center;
+}

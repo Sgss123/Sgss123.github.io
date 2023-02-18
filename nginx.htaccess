@@ -1,7 +1,0 @@
-    if (!-e $request_filename){
-        rewrite ^(.*)$ /$1.html last;
-        break;
-    }
-    location / {
-        try_files $uri $uri/ $uri.php$is_args$args;
-    }
