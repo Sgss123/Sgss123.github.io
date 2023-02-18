@@ -4,11 +4,13 @@
 }
 
 body {
-    background-image: url("/static/img/Happy.jpg");
+    /* background-color: #9c88ff; */
+    background-image: linear-gradient(to right, #3cadeb, #9c88ff);
+    /* background-image: url("/static/img/Happy.jpg"); */
     /* display: flex; */
     justify-content: center;
-    background-size: 100% 70%;
-    background-attachment: scroll;
+    /* background-size: 100% 70%; */
+    /* background-attachment: scroll; */
     background-repeat: no-repeat;
 }
 
