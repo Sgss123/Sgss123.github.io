@@ -1414,7 +1414,7 @@ img {
 }
 
 .c-dialog-agreement-with-counter li:before {
-	content: counters(list, '.') '.'counter(item) '.';
+	content: counters(list, '.') '.' counter(item) '.';
 	counter-increment: item;
 	margin-right: 8px
 }
