@@ -39,3 +39,13 @@
   font-family: "中文像素 Chinese Pixel";
   src: url(ipix_12px.ttf);
 }
+
+@font-face {
+  font-family: "霞鹜尚智黑";
+  src: url(LXGWFasmartGothic.ttf);
+}
+
+@font-face {
+  font-family: "霞鹜新晰黑";
+  src: url(LXGWNeoXiHei.ttf);
+}
