@@ -27,7 +27,7 @@
     <![endif]-->
 </head>
 
-<body>
+<body class="container-fluid">
     <noscript>
         <h1>您的浏览器不支持JavaScript！</h1>
     </noscript>
@@ -51,10 +51,6 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <!-- <li class="nav-item">
-                        <a class="nav-link active" aria-current="page"
-                            href="https://www.waterspo.top?form=newsite">返回旧网站</a>
-                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="/about">自我介绍</a>
                     </li>
@@ -104,7 +100,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a id="time" class="nav-link" href="javascript:void(0);">当前时间：{props.date.toLocaleTimeString()}</a>
+                        <a id="time" class="nav-link" href="javascript:void(0);">当前时间：00:00:00</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -227,7 +223,7 @@
     <script type="importmap">
         {
         "imports": {
-          "vue": "//unpkg.com/vue@3/dist/vue.esm-browser.js"
+          "vue": "//unpkg.com/vue@3.2.47/dist/vue.esm-browser.prod.js"
         }
       }
     </script>
