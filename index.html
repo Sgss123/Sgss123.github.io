@@ -211,6 +211,22 @@
     </script>
     <script type="text/babel" src="/static/js/jsx.js">
     </script>
+    <script>
+        function changeTitle(Title) {
+            document.title = Title;
+        }
+        var domain = window.location.hostname;
+        if (domain == "www.waterspo.top" || domain == "waterspo.top") {
+            // 在example.com域名下执行某些操作
+            changeTitle("Sgss小破站")
+        } else if (domain == "www.xiaolizi.fun") {
+            // 在example.net域名下执行某些操作
+            changeTitle("欢迎来到小李子的网站！")
+        } else {
+            changeTitle("网站测试环境")
+        }
+        
+    </script>
 </body>
 
 </html>
