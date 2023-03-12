@@ -167,14 +167,14 @@
     <!-- 版权声明 -->
     <footer>
         <div style="text-align: center;">
-            <small>Copyright &COPY; 2022-<span id="date"></span> Sgss All Rights Reserved.</small>
+            <small>Copyright &COPY; 2022-<span id="date"></span> <span id="author">Sgss</span> All Rights Reserved.</small>
             <script>
                 var d = new Date();
                 var x = document.getElementById("date");
                 x.innerHTML = d.getFullYear();
             </script>
             <a href="https://icp.gov.moe/?keyword=20229994" target="_blank"
-                style="color: #f400a1;"><b>萌ICP备20229994号</b>
+                style="color: #f400a1;" id="ICP"><b>萌ICP备20229994号</b>
             </a>
         </div>
     </footer>
@@ -212,19 +212,22 @@
     <script type="text/babel" src="/static/js/jsx.js">
     </script>
     <script>
-        function changeTitle(Title, desc) {
+        function changeTitle(Title, desc, name) {
             document.title = Title;
             document.getElementById("site-name").innerHTML = desc;
+            document.getElementById("author").innerHTML = name;
         }
         var domain = window.location.hostname;
         if (domain == "www.waterspo.top" || domain == "waterspo.top") {
             // 在example.com域名下执行某些操作
-            changeTitle("Sgss小破站", "&#128213;&nbsp;Sgss小破站")
+            changeTitle("Sgss小破站", "&#128213;&nbsp;Sgss小破站", "Sgss")
         } else if (domain == "www.xiaolizi.fun") {
             // 在example.net域名下执行某些操作
-            changeTitle("欢迎来到小李子的网站！", "&#128213;&nbsp;小李子的网站")
+            changeTitle("欢迎来到小李子的网站！", "&#128213;&nbsp;小李子的网站", "小李子")
+            $("#ICP").hide();
         } else {
-            changeTitle("网站测试环境", "&#128213;&nbsp;网站测试")
+            changeTitle("网站测试环境", "&#128213;&nbsp;网站测试", "网站测试环境")
+            $("#ICP").hide();
         }
 
     </script>
