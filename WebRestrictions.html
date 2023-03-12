@@ -69,18 +69,19 @@
         }
 
         .bottom a {
+            
         }
 
         #blocked_info {
             width: 526px;
             overflow: hidden;
             white-space: nowrap;
-            text-overflow: ellipsis;
             -o-text-overflow: ellipsis;
             -icab-text-overflow: ellipsis;
             -khtml-text-overflow: ellipsis;
             -moz-text-overflow: ellipsis;
             -webkit-text-overflow: ellipsis;
+            text-overflow: ellipsis;
         }
 
         .btn {
@@ -131,7 +132,7 @@
             border-color: var(--bs-btn-hover-border-color);
         }
 
-        .btn-check + .btn:hover {
+        .btn-check+.btn:hover {
             color: var(--bs-btn-color);
             background-color: var(--bs-btn-bg);
             border-color: var(--bs-btn-border-color);
@@ -145,14 +146,14 @@
             box-shadow: var(--bs-btn-focus-box-shadow);
         }
 
-        .btn-check:focus-visible + .btn {
+        .btn-check:focus-visible+.btn {
             border-color: var(--bs-btn-hover-border-color);
             outline: 0;
             box-shadow: var(--bs-btn-focus-box-shadow);
         }
 
-        .btn-check:checked + .btn,
-        :not(.btn-check) + .btn:active,
+        .btn-check:checked+.btn,
+        :not(.btn-check)+.btn:active,
         .btn:first-child:active,
         .btn.active,
         .btn.show {
@@ -161,8 +162,8 @@
             border-color: var(--bs-btn-active-border-color);
         }
 
-        .btn-check:checked + .btn:focus-visible,
-        :not(.btn-check) + .btn:active:focus-visible,
+        .btn-check:checked+.btn:focus-visible,
+        :not(.btn-check)+.btn:active:focus-visible,
         .btn:first-child:active:focus-visible,
         .btn.active:focus-visible,
         .btn.show:focus-visible {
@@ -199,33 +200,33 @@
 </head>
 
 <body>
-<div class="main">
-    <div class="top">
-        <p class="title">网站内容控制</p>
-        <p class="tipCon">出于对您的关心，该网址已经被限制访问！</p>
+    <div class="main">
+        <div class="top">
+            <p class="title">网站内容控制</p>
+            <p class="tipCon">出于对您的关心，该网址已经被限制访问！</p>
+        </div>
+        <div class="middle">
+            <p>网址信息: <span id="blocked_url"></span></p>
+            <p id="blocked_info">限制类型: <span id="blocked_desc">阻断访问</span></p>
+            <p>限制原因：<span class="reason">非本站页面</span></p>
+        </div>
+        <div class="bottom">
+            <a href="javascript:void(0)" onclick="window.location.replace(u)" class="btn btn-danger">无视风险，继续访问</a>
+        </div>
     </div>
-    <div class="middle">
-        <p>网址信息: <span id="blocked_url"></span></p>
-        <p id="blocked_info">限制类型: <span id="blocked_desc">阻断访问</span></p>
-        <p>限制原因：<span class="reason">非本站页面</span></p>
-    </div>
-    <div class="bottom">
-        <a href="javascript:void(0)" onclick="window.location.replace(u)" class="btn btn-danger">无视风险，继续访问</a>
-    </div>
-</div>
-<script type="text/javascript">
-    function g(id) {
-        return document.getElementById(id);
-    }
+    <script type="text/javascript">
+        function g(id) {
+            return document.getElementById(id);
+        }
 
-    var b = g("blocked_url"), u = window.location.href.split('?d=')[1];
-    b.setAttribute("title", u);
-    if (u.length > 50) u = u.substr(0, 50) + "...";
-    b.innerHTML = u;
-    // 设置自定义规则 title
-    var d = g("blocked_desc"), k = d.innerHTML;
-    d.setAttribute("title", k);
-</script>
+        var b = g("blocked_url"), u = window.location.href.split('?d=')[1];
+        b.setAttribute("title", u);
+        if (u.length > 50) u = u.substr(0, 50) + "...";
+        b.innerHTML = u;
+        // 设置自定义规则 title
+        var d = g("blocked_desc"), k = d.innerHTML;
+        d.setAttribute("title", k);
+    </script>
 </body>
 
 </html>
