@@ -118,8 +118,8 @@
         </div>
     </nav>
     <div class="body">
-        <div id="app" style="text-align:center;">{{ message }}</div>
-        <div id="carouselAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div id="app" style="text-align:center;"><marquee behavior="" direction="">{{ message }}</marquee></div>
+        <!-- <div id="carouselAutoplaying" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -161,7 +161,7 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
-        </div>
+        </div> -->
         <div id="example"></div>
     </div>
     <!-- 版权声明 -->
@@ -180,19 +180,19 @@
         </div>
     </footer>
     <!-- 脚本引入 -->
-    <script src="//unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="/static/js/jquery-3.6.3.min.js"></script>
     <script src="/static/plugins/bootstrap-5.3.0/js/bootstrap.bundle.min.js"></script>
     <script src="/static/plugins/font_3878771_1u1xusjlsd7/iconfont.js"></script>
     <script src="/static/js/canvas.js"></script>
-    <script crossorigin src="//unpkg.com/react@16/umd/react.production.min.js"></script>
-    <script crossorigin src="//unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
-    <script src="//unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script crossorigin src="/static/plugins/react@18.3.0-next-fecc288b7-20221025/umd/react.production.min.js"></script>
+    <script crossorigin src="/static/plugins/react-dom@18.3.0-next-fecc288b7-20221025/umd/react-dom.production.min.js"></script>
+    <script src="/static/plugins/babel-standalone@7.0.0-beta.3/babel.min.js"></script>
 
     <script type="importmap">
         {
         "imports": {
-          "vue": "//unpkg.com/vue@3.2.47/dist/vue.esm-browser.prod.js"
+          "vue": "/static/plugins/vue@3.3.0-alpha.4/dist/vue.esm-browser.prod.js"
         }
       }
     </script>
@@ -205,7 +205,7 @@
         createApp({
             data() {
                 return {
-                    message: '广告忽略即可'
+                    message: '打工人，打工魂，打工都是人上人！'
                 }
             }
         }).mount('#app')
