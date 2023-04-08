@@ -1,7 +1,3 @@
-ReactDOM.render(
-    <h1>Hello, world!</h1>,
-    document.getElementById('example')
-);
 function Clock(props) {
     return (
         '当前时间：' + props.date.toLocaleTimeString()
