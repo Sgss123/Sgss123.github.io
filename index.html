@@ -37,155 +37,19 @@
     <noscript>
         <h1>您的浏览器不支持JavaScript！</h1>
     </noscript>
-    <!--[if lt IE 9]>
-        <h1>您的浏览器内核已经低于HTML5最低兼容的Internet Explorer 9，可能会与网站所有者的显示有极大的差异，建议使用<a href="https://www.microsoft.com/zh-cn/edge">Microsoft Edge</a>。</h1>
-    <![endif]-->
-    <!--[if IE 9]>
-        <h1>您的浏览器为Internet Explorer 9，本网站的内容几乎无法显示，请使用Internet Explorer 10以上或Chromium内核的浏览器，建议使用<a href="https://www.microsoft.com/zh-cn/edge">Microsoft Edge</a>。</h1>
-    <![endif]-->
-    <!--[if IE]>
-        <h1>检测到您的浏览器为IE内核，本网站的部分内容可能不会正常显示，建议使用Chromium内核的浏览器，推荐使用<a href="https://www.microsoft.com/zh-cn/edge">Microsoft Edge</a>。</h1>
-    <![endif]-->
     <!-- 导航栏 -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand d-inline-block align-text-top" id="site-name" href="/">&#128213;&nbsp;Sgss小破站</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/about">自我介绍</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/lianxiwo.html">联系站长</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="javascript:;" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            友情链接
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="http://sec.z5x.cn" rel="nofollow ugc"
-                                    onclick="window.open('WebRestrictions?d=http\:\/\/sec.z5x.cn');return false;">极语言</a>
-                            </li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="/friend">申请友链</a></li>
-                        </ul>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <marquee behavior="scroll" direction="left" onmouseover="this.stop()" onmouseout="this.start()"
-                            class="nav-link"
-                            style="width: 180px;color: orange;cursor: pointer;font-size: 17px;font-family: '黑体','楷体';">
-                            <b>
-                                温馨提示：您正在访问的是新网站；新网站暂未建设完毕，如需浏览完整内容请移步至<a href="https://www.waterspo.top">旧网站</a>，谢谢！
-                                Notice: you are visiting a new website; The new website has not been completed yet. If
-                                you want to browse the complete content, please move to <a
-                                    href="https://www.waterspo.top">the old website</a>. Thank you!</b>
-                        </marquee>
-                    </li> -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="javascript:;" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            <svg class="icon" aria-hidden="true">
-                                <use xlink:href="#icon-windows"></use>
-                            </svg>Windows快速工具
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="ms-settings://"><i class="iconfont icon-set"></i>设置</a>
-                            </li>
-                            <li><a class="dropdown-item" href="ms-windows-store://">微软商店</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="minecraft://">Minecraft(Windows 10)</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a id="time" class="nav-link" href="javascript:void(0);">当前时间：00:00:00</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="在网页中搜索" aria-label="在网页中搜索">
-                    <button class="btn btn-outline-success" type="submit"><i
-                            class="fa-solid fa-magnifying-glass"></i></button>
-                </form>
-            </div>
-        </div>
-    </nav>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" id="nav-placeholder"></nav>
     <div class="body">
         <div id="app" style="text-align:center;">
             <marquee behavior="" direction="">{{ message }}</marquee>
         </div>
-        <!-- <div id="carouselAutoplaying" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="/static/img/carousel/ads.jpg" class="d-block w-100" alt="广告位招租">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>横幅广告位招租</h5>
-                        <p>横幅广告图片要求：高为30px</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="/static/img/carousel/ads.jpg" class="d-block w-100" alt="广告位招租">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>横幅广告位招租</h5>
-                        <p>横幅广告图片要求：高为30px</p>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="/static/img/carousel/ads.jpg" class="d-block w-100" alt="广告位招租">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>横幅广告位招租</h5>
-                        <p>横幅广告图片要求：高为30px</p>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselAutoplaying"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselAutoplaying"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div> -->
-
         <div id="example"></div>
     </div>
     <!-- 版权声明 -->
-    <footer>
-        <div style="text-align: center;">
-            <small>Copyright &COPY; 2022-<span id="date"></span> <span id="author">Sgss</span> All Rights
-                Reserved.</small>
-            <script>
-                var d = new Date();
-                var x = document.getElementById("date");
-                x.innerHTML = d.getFullYear();
-            </script>
-            <a href="https://icp.gov.moe/?keyword=20229994" target="_blank" style="color: #f400a1;"
-                id="icp"><b>萌ICP备20229994号</b>
-            </a>
-        </div>
-    </footer>
+    <footer style="position: absolute; bottom: 0; width: 99%; text-align: center;" id="footer-placeholder"></footer>
     <!-- 脚本引入 -->
     <script src="https://unpkg.com/@popperjs/core@2"></script>
-    <script src="/static/js/jquery-3.6.3.min.js"></script>
+    <script src="/static/js/jquery-3.6.4.min.js"></script>
     <script src="/static/plugins/bootstrap-5.3.0/js/bootstrap.bundle.min.js"></script>
     <script src="/static/plugins/font_3878771_1u1xusjlsd7/iconfont.js"></script>
     <script src="/static/js/canvas.js"></script>
@@ -193,48 +57,9 @@
     <script crossorigin
         src="/static/plugins/react-dom@18.3.0-next-fecc288b7-20221025/umd/react-dom.production.min.js"></script>
     <script src="/static/plugins/babel-standalone@7.0.0-beta.3/babel.min.js"></script>
-
-    <script type="importmap">
-        {
-        "imports": {
-          "vue": "/static/plugins/vue@3.3.0-alpha.4/dist/vue.esm-browser.prod.js"
-        }
-      }
-    </script>
-
-    <script type="module">
-        import {
-            createApp
-        } from 'vue'
-
-        createApp({
-            data() {
-                return {
-                    message: '烦的牛子冈后动作流时啊，你只侯后陀杨拢光词普国撒小分骂然倒，人看满俭活徒书事亲，太且心仁念慷欲即而了人地守种壬以啊，赐价设朗苦感主了仓非保游反是，云与投时，关友官要一范智价于那感本愚说之死灰与者，为秦我逃登来后勉招以始得里，办弟游通国刑一韩应也的畴非太，冈下备皇我攻洪帝秦够上气没，起台张不，准不位互薪皇力马的不，十且让妄颜反在要今天着主，赠使被十者情了者笔不临生拿，纯否被水灰沫归罪，揽婵下主，收。'
-                }
-            }
-        }).mount('#app')
-    </script>
+    <script src="/static/js/navbar.js"></script>
+    <script src="/static/js/footer.js"></script>
     <script type="text/babel" src="/static/js/jsx.js">
-    </script>
-    <script>
-        function changeTitle(Title, desc, name) {
-            document.title = Title;
-            document.getElementById("site-name").innerHTML = desc;
-            document.getElementById("author").innerHTML = name;
-        }
-        var domain = window.location.hostname;
-        if (domain == "www.waterspo.top" || domain == "waterspo.top") {
-            // 在example.com域名下执行某些操作
-            changeTitle("Sgss小破站", "&#128213;&nbsp;Sgss小破站", "Sgss")
-        } else if (domain == "www.xiaolizi.fun" || domain == "xiaolizi.fun") {
-            // 在example.net域名下执行某些操作
-            changeTitle("欢迎来到小李子的网站！", "&#128213;&nbsp;小李子的网站", "小李子")
-            $("#icp").hide();
-        } else {
-            changeTitle("网站测试环境", "&#128213;&nbsp;网站测试", "网站测试环境")
-            $("#icp").hide();
-        }
     </script>
 </body>
 
