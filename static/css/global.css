@@ -1,6 +1,108 @@
 @charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Liu+Jian+Mao+Cao&family=Noto+Sans+SC:wght@500&family=Noto+Serif+SC:wght@500&display=swap');
 
-html {
+
+* {
+	font-family: 'Noto Sans SC', sans-serif;
+}
+
+body,
+button,
+dd,
+div,
+dl,
+dt,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+input,
+li,
+ol,
+p,
+td,
+textarea,
+th,
+ul {
+	margin: 0;
+	padding: 0
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 100%
+}
+
+em,
+i {
+	font-style: normal;
+	font-weight: 400
+}
+
+button,
+input,
+select,
+textarea {
+	font-family: PingFangSC-Light, 'STHeiti Light', 'helvetica neue', 'hiragino sans gb', arial, 'microsoft yahei ui', 'microsoft yahei', simsun, sans-serif
+}
+
+button,
+input,
+select {
+	box-sizing: border-box
+}
+
+button {
+	border: none
+}
+
+button,
+input[type=button],
+input[type=submit],
+select {
+	cursor: pointer
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+
+li {
+	list-style: none
+}
+
+a {
+	text-decoration: none
+}
+
+a img,
+fieldset,
+iframe,
+img {
+	border-width: 0;
+	border-style: none
+}
+
+.clearfix:after,
+.clearfix:before {
+	content: "";
+	display: table
+}
+
+.clearfix:after {
+	clear: both
+}
+
+/* html {
 	font-family: 'pingfang SC', 'helvetica neue', arial, 'hiragino sans gb', 'microsoft yahei ui', 'microsoft yahei', simsun, sans-serif;
 	font-size: 14px;
 	-webkit-tap-highlight-color: transparent
@@ -24177,4 +24279,4 @@ body.ie8 .qc-navigation-hover .state-log-in .user-id {
 
 #MAXIM {
 	content: "niu2020923145926"
-}
+} */
