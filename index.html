@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/static/css/global.css">
-    <link rel="stylesheet" href="/static/plugins/bootstrap-5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
     <link rel="stylesheet" href="/static/plugins/fontawesome-free-6.2.1-web/css/all.min.css">
     <link rel="stylesheet" href="/static/plugins/weui@2.5.16/dist/style/weui.min.css">
     <link rel="stylesheet" href="/static/plugins/font_3878771_1u1xusjlsd7/iconfont.css">
@@ -31,34 +31,58 @@
     <!--[if lt IE 9]>
     <script src="https://unpkg.com/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
     <![endif]-->
+    <script async src="https://unpkg.com/es-module-shims@latest/dist/es-module-shims.js"></script>
 </head>
 
 <body class="container-fluid">
-<noscript>
-    <h1>您的浏览器不支持JavaScript！</h1>
-</noscript>
-<!-- 导航栏 -->
-<nav class="navbar navbar-expand-lg bg-body-tertiary" id="nav-placeholder"></nav>
-<div class="poem">
-    <img id="pppoem" src="https://v2.jinrishici.com/one.svg?font-size=50&spacing=2&color=DarkRed"
-         style="max-width:100%; display: block; margin: 0 auto;">
-</div>
-<div class="content"></div>
-<!-- 版权声明 -->
-<footer style="position: absolute; bottom: 0; width: 99%; text-align: center;" id="footer-placeholder"></footer>
-<!-- 脚本引入 -->
-<script src="https://unpkg.com/@popperjs/core@2"></script>
-<script src="/static/js/jquery-3.6.4.min.js"></script>
-<script src="/static/plugins/bootstrap-5.3.0/js/bootstrap.bundle.min.js"></script>
-<script src="/static/plugins/font_3878771_1u1xusjlsd7/iconfont.js"></script>
-<script src="/static/js/canvas.js"></script>
-<script src="/static/plugins/react@18.3.0-next-fecc288b7-20221025/umd/react.production.min.js"></script>
-<script src="/static/plugins/react-dom@18.3.0-next-fecc288b7-20221025/umd/react-dom.production.min.js"></script>
-<script src="/static/plugins/babel-standalone@7.0.0-beta.3/babel.min.js"></script>
-<script src="/static/js/navbar.js"></script>
-<script src="/static/js/footer.js"></script>
-<script type="text/babel" src="/static/js/jsx.js">
-</script>
+    <noscript>
+        <h1>您的浏览器不支持JavaScript！</h1>
+    </noscript>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary container-fluid" id="nav-placeholder"></nav>
+    <div class="poem">
+        <img id="pppoem" src="https://v2.jinrishici.com/one.svg?font-size=50&spacing=2&color=DarkRed"
+            style="max-width:100%; display: block; margin: 0 auto;">
+    </div>
+    <div class="content">
+        <script type="module">
+        import * as THREE from 'https://unpkg.com/three/build/three.module.js';
+        const renderer = new THREE.WebGLRenderer();
+        renderer.setSize(window.innerWidth / 2, window.innerHeight / 2, false);
+        document.body.appendChild(renderer.domElement);
+
+        const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 500);
+        camera.position.set(0, 0, 100);
+        camera.lookAt(0, 0, 0);
+
+        const scene = new THREE.Scene();
+
+        //create a blue LineBasicMaterial
+        const material = new THREE.LineBasicMaterial({ color: 0x0000ff });
+
+        const points = [];
+        points.push(new THREE.Vector3(- 10, 0, 0));
+        points.push(new THREE.Vector3(0, 10, 0));
+        points.push(new THREE.Vector3(10, 0, 0));
+
+        const geometry = new THREE.BufferGeometry().setFromPoints(points);
+
+        const line = new THREE.Line(geometry, material);
+
+        scene.add(line);
+        renderer.render(scene, camera);
+    </script>
+    </div>
+    <!-- 版权声明 -->
+    <footer style="position: absolute; bottom: 0; width: 99vw; text-align: center;" id="footer-placeholder"></footer>
+    <!-- 脚本引入 -->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="/static/js/jquery-3.6.4.min.js"></script>
+    <script src="/static/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/plugins/font_3878771_1u1xusjlsd7/iconfont.js"></script>
+    <script src="/static/js/navbar.js"></script>
+    <script src="/static/js/footer.js"></script>
+    
 </body>
 
 </html>

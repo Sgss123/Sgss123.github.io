@@ -7,10 +7,13 @@ var $nav = $('<nav>').html(`
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-                <a class="nav-link" href="/about">自我介绍</a>
+                <a class="nav-link" href="/about">关于</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/lianxiwo.html">联系站长</a>
+                <a class="nav-link" href="/contact">联系</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://blog.waterspo.top">博客</a>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="javascript:;" role="button" data-bs-toggle="dropdown"
@@ -24,7 +27,7 @@ var $nav = $('<nav>').html(`
                     <li>
                         <hr class="dropdown-divider">
                     </li>
-                    <li><a class="dropdown-item" href="/friend">申请友链</a></li>
+                    <li><a class="dropdown-item" href="mailto://support@waterspo.top">申请友链</a></li>
                 </ul>
             </li>
             <li class="nav-item dropdown">
@@ -43,9 +46,6 @@ var $nav = $('<nav>').html(`
                     </li>
                     <li><a class="dropdown-item" href="minecraft://">Minecraft(Windows 10)</a></li>
                 </ul>
-            </li>
-            <li class="nav-item">
-                <a id="time" class="nav-link" href="javascript:void(0);">当前时间：00:00:00</a>
             </li>
         </ul>
         <!--<form class="d-flex" role="search">
