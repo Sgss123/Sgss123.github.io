@@ -45,36 +45,10 @@
             style="max-width:100%; display: block; margin: 0 auto;">
     </div>
     <div class="content">
-        <script type="module">
-        import * as THREE from 'https://unpkg.com/three/build/three.module.js';
-        const renderer = new THREE.WebGLRenderer();
-        renderer.setSize(window.innerWidth / 2, window.innerHeight / 2, false);
-        document.body.appendChild(renderer.domElement);
-
-        const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 500);
-        camera.position.set(0, 0, 100);
-        camera.lookAt(0, 0, 0);
-
-        const scene = new THREE.Scene();
-
-        //create a blue LineBasicMaterial
-        const material = new THREE.LineBasicMaterial({ color: 0x0000ff });
-
-        const points = [];
-        points.push(new THREE.Vector3(- 10, 0, 0));
-        points.push(new THREE.Vector3(0, 10, 0));
-        points.push(new THREE.Vector3(10, 0, 0));
-
-        const geometry = new THREE.BufferGeometry().setFromPoints(points);
-
-        const line = new THREE.Line(geometry, material);
-
-        scene.add(line);
-        renderer.render(scene, camera);
-    </script>
     </div>
+    <div id="tp-weather-widget" style="position:absolute;z-index:99999;"></div>
     <!-- 版权声明 -->
-    <footer style="position: absolute; bottom: 0; width: 99vw; text-align: center;" id="footer-placeholder"></footer>
+    <footer style="display: block; text-align: center; margin: 0" id="footer-placeholder"></footer>
     <!-- 脚本引入 -->
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="/static/js/jquery-3.6.4.min.js"></script>
@@ -82,7 +56,52 @@
     <script src="/static/plugins/font_3878771_1u1xusjlsd7/iconfont.js"></script>
     <script src="/static/js/navbar.js"></script>
     <script src="/static/js/footer.js"></script>
-    
+
+    <style type="text/css">
+        a.sc-eHgmQL.hQLwwD {
+            display: none;
+        }
+
+        #tp-weather-widget .sw-container {
+            right: 10px !important;
+            left: unset !important;
+        }
+    </style>
+    <script>
+        (function (a, h, g, f, e, d, c, b) {
+            b = function () {
+                d = h.createElement(g);
+                c = h.getElementsByTagName(g)[0];
+                d.src = e;
+                d.charset = "utf-8";
+                d.async = 1;
+                c.parentNode.insertBefore(d, c)
+            };
+            a["SeniverseWeatherWidgetObject"] = f;
+            a[f] || (a[f] = function () {
+                (a[f].q = a[f].q || []).push(arguments)
+            });
+            a[f].l = +new Date();
+            if (a.attachEvent) {
+                a.attachEvent("onload", b)
+            } else {
+                a.addEventListener("load", b, false)
+            }
+        }(window, document, "script", "SeniverseWeatherWidget", "//cdn.sencdn.com/widget2/static/js/bundle.js?t=" +
+            parseInt((new Date().getTime() / 100000000).toString(), 10)));
+        window.SeniverseWeatherWidget('show', {
+            flavor: "bubble",
+            location: "WX4FBXXFKE4F",
+            geolocation: true,
+            language: "zh-Hans",
+            unit: "c",
+            theme: "auto",
+            token: "26c4103c-986c-4ecc-a1f7-a52b5d18b1a6",
+            hover: "enabled",
+            container: "tp-weather-widget"
+        })
+    </script>
+
 </body>
 
 </html>
