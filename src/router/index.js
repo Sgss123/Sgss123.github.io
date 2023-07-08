@@ -1,5 +1,5 @@
 import { createRouter, createWebHashHistory } from "vue-router";
-import Root from "~/pages/root.vue"
+import Root from "~/pages/Root.vue"
 import Index from "~/pages/Index.vue"
 import AboutMe from "~/pages/AboutMe.vue"
 import NotFound from "~/pages/404.vue"
