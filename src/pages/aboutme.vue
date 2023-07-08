@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1 class="font-sans text-6xl text-center mb-4">关于我</h1>
+        <h1 class="font-serif text-6xl text-center mb-4">关于我</h1>
         <div class="firstPage max-w-4xl">
             <el-row>
                 <el-col :span="12">

@@ -1,7 +1,7 @@
 import { createRouter, createWebHashHistory } from "vue-router";
 import Root from "~/pages/root.vue"
-import Index from "~/pages/index.vue"
-import AboutMe from "~/pages/aboutme.vue"
+import Index from "~/pages/Index.vue"
+import AboutMe from "~/pages/AboutMe.vue"
 import NotFound from "~/pages/404.vue"
 
 const routes = [{
