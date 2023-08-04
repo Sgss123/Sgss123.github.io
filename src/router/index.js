@@ -1,30 +1,19 @@
-import { createRouter, createWebHashHistory } from "vue-router";
-import Root from "~/pages/Root.vue"
-import Index from "~/pages/Index.vue"
-import AboutMe from "~/pages/AboutMe.vue"
-import NotFound from "~/pages/404.vue"
+import { createRouter, createWebHistory } from "vue-router";
 
 const routes = [{
     path: "/",
-    component: Root,
-    children: [
-        {
-            path: "",
-            name: "Index",
-            component: Index
-        },
-        {
-            path: "about",
-            name: "AboutMe",
-            component: AboutMe
-        }
-    ]
+    name: "Index",
+    component: () => import('~/pages/Index.vue')
 },
-{ path: '/:pathMatch(.*)*', name: 'NotFound', component: NotFound }
+{
+    path: "/about",
+    component: () => import('~/pages/AboutMe.vue')
+},
+{ path: '/:pathMatch(.*)*', component: () => import('~/pages/404.vue') }
 ]
 
 const router = createRouter({
-    history: createWebHashHistory(),
+    history: createWebHistory(),
     routes
 })
 
