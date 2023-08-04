@@ -9,10 +9,10 @@ const routes = [{
     path: "/about",
     component: () => import('~/pages/AboutMe.vue')
 },
-// {
-//     path: "/vuehelloworld",
-//     component: () => import('~/compotents/HelloWorld.vue')
-// },
+{
+    path: "/blog.waterspo.top",
+    component: () => import('~/pages/Index.vue')
+},
 {
     path: '/:pathMatch(.*)*',
     component: () => import('~/pages/404.vue')
