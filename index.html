@@ -6,10 +6,46 @@
   <link rel="icon" type="image/svg+xml" href="/public/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vite + Vue</title>
+  <style>
+    #time {
+      /* font: 18px/26px 'Times New Roman', Times, FreeSerif, serif; */
+      --use: 20px;
+      --doNotUse: 0px;
+      --fsAncillary: var(--doNotUse);
+      font-weight: 400;
+      letter-spacing: 0;
+      color: #fff;
+      font-family: Montserrat, Arial, Helvetica, sans-serif;
+      /* margin: 0; */
+      border: 0;
+      outline: 0;
+      float: left;
+      white-space: nowrap;
+      box-shadow: 5px 5px 5px #999;
+      display: block;
+      /* width: 100%; */
+      background: #222;
+      /* padding: 0; */
+      position: absolute;
+      bottom: 20em;
+    }
+
+    #time:hover {
+      /* visibility: hidden; */
+    }
+  </style>
 </head>
 
 <body>
   <div id="app"></div>
+  <div id="time">
+    <a href="https://time.is/Guangzhou" id="time_is_link" rel="nofollow" style="font-size:30px">广州时间:</a>
+    <span id="Guangzhou_z43d" style="font-size:30px"></span>
+    <script src="//widget.time.is/zh.js"></script>
+    <script>
+      time_is_widget.init({ Guangzhou_z43d: { template: "TIME<br>SUN", sun_format: "日出: srhour:srminute 日落: sshour:ssminute<br>昼长: dlhours时 dlminutes分", coords: "23.1166700,113.2500000" } });
+    </script>
+  </div>
   <script type="module" src="/src/main.js"></script>
 </body>
 

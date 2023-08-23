@@ -19,6 +19,5 @@
 .router-link-active {
   --tw-text-opacity: 1;
   color: rgba(109, 40, 217, var(--tw-text-opacity));
-
 }
 </style>
