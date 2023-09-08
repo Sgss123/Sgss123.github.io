@@ -1,6 +1,7 @@
 <script setup>
 import Header from "~/pages/Header.vue"
 import Footer from "~/pages/Footer.vue"
+import "animate.css"
 </script>
 
 <template>

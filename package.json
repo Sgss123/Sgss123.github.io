@@ -9,13 +9,21 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@styils/vue": "^1.1.6",
+    "animate.css": "^4.1.1",
+    "axios": "^1.5.0",
     "element-plus": "^2.3.7",
+    "github-markdown-css": "^5.2.0",
+    "lodash-es": "^4.17.21",
     "lorem-ipsum": "^2.0.8",
+    "marked": "^8.0.1",
     "vue": "^3.2.47",
+    "vue-marked": "^0.1.1",
     "vue-router": "^4.2.2"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.1.0",
+    "@vitejs/plugin-vue-jsx": "^3.0.2",
     "vite": "^4.3.9",
     "vite-plugin-windicss": "^1.9.0",
     "windicss": "^3.5.6"

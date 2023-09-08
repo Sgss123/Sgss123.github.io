@@ -10,8 +10,12 @@ const routes = [{
     component: () => import('~/pages/AboutMe.vue')
 },
 {
-    path: "/blog.waterspo.top",
-    component: () => import('~/pages/Index.vue')
+    path: "/blog",
+    component: () => import('~/pages/Blog.vue')
+}, {
+    path: "/post/:id",
+    name:"blog",
+    component: () => import('~/pages/ViewBlog.vue')
 },
 {
     path: '/:pathMatch(.*)*',
