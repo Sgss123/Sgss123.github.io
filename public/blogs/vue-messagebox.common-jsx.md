@@ -358,4 +358,5 @@ export default showMsg;
 ```
 
 <h2 id="demo">效果演示 Effect Show</h2>
-演示地址：[首页按钮](/#)
+
+演示地址：[首页按钮](/)
