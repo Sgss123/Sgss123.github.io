@@ -1,5 +1,5 @@
 import Btn from "~/components/Btn.vue"
-import { createApp, } from "vue"
+import { createApp } from "vue"
 import { styled } from "@styils/vue";
 
 const DivModal = styled('div', {

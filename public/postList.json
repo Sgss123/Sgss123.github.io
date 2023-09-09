@@ -9,6 +9,12 @@
         "id": 2,
         "postName": "ddns-go使用教程",
         "location": "ddns.go-shi-yong-jiao-cheng",
-        "description": "第二篇文章"
+        "description": "DDNS-Go简易使用教程"
+    },
+    {
+        "id": 3,
+        "postName": "Vue 弹窗组件封装",
+        "location": "vue-messagebox.common-jsx",
+        "description": "将弹窗组件封装为jsx文件，命令式组件"
     }
 ]
