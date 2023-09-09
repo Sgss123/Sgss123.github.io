@@ -1,5 +1,11 @@
 # Vue 弹窗组件封装 命令式组件封装
 
+## **目录 disc**
+
+* [教程 Tutorial](#tutorial) 
+* [效果演示 Effect Show](#demo)
+
+<h2 id="tutorial">教程 Tutorial</h2>
 弹窗属于通用型的功能，在各个场景中都可能用到。开发仅需要一次，使用却需要很多次，因此着重考虑使用时的成本。
 
 
@@ -350,3 +356,6 @@ function showMsg(msg, clickHandler) {
 }
 export default showMsg;
 ```
+
+<h2 id="demo">效果演示 Effect Show</h2>
+演示地址：[首页按钮](/)
