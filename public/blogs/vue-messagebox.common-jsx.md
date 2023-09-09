@@ -114,9 +114,9 @@ export default showMsg;
 - function showMsg() {
 -    
 - }
-+ function showMsg(msg,clickHandler) {
-+ 
-+ }
+function showMsg(msg,clickHandler) {
+ 
+}
 export default showMsg;
 ```
 怎么渲染呢？
