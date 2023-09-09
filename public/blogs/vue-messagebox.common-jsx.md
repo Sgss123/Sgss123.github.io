@@ -111,9 +111,6 @@ export default showMsg;
 ```diff
 // ~/commons/showMsg.js
 + import Message from "~/components/MessageBox.vue"
-- function showMsg() {
--    
-- }
 function showMsg(msg,clickHandler) {
  
 }
