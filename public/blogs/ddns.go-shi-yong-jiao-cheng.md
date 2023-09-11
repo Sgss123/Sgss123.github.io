@@ -6,7 +6,7 @@
 * [下载 download](#download)
 * [配置 configuration](#configuration)
 
-<h2 id="characteristics">特性 Characteristics</h2>
+## <h2 id="characteristics">特性 Characteristics</h2>
 
 - 支持Mac、Windows、Linux系统，支持ARM、x86架构
 - 支持的域名服务商 Alidns(阿里云) Dnspod(腾讯云) Cloudflare 华为云 Callback 百度云 porkbun GoDaddy Google Domains
@@ -21,9 +21,7 @@
 - 支持TTL
 - 支持部分dns服务商传递自定义参数，实现地域解析等功能
 
-<br/>
-
-<h2 id="download">下载 Download</h2>
+## <h2 id="download">下载 Download</h2>
 
 作者Github：[https://github.com/jeessy2/ddns-go/releases/](https://github.com/jeessy2/ddns-go/releases/)
 
@@ -42,9 +40,7 @@
 
 ![文件目录](https://s1.ax1x.com/2023/01/05/pSkYiRg.png)
 
-<br/>
-
-<h2 id="configuration">配置 Configuration</h2>
+## <h2 id="configuration">配置 Configuration</h2>
 
 双击`ddns-go.exe`
 
