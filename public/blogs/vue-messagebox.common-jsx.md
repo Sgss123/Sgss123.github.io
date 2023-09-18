@@ -153,13 +153,13 @@ export default showMsg;
 但是app已经被主页面挂载了，所以我们要换一个。
 ```diff
 // ~/commons/showMsg.js
-+ import { createApp } from 'vue'
+import { createApp } from 'vue'
 import Message from "~/components/MessageBox.vue"
 function showMsg(msg,clickHandler) {
 +    const div =document.createElement('div');
-+    // 渲染MessageBox组件
+   // 渲染MessageBox组件
 +    document.body.appendChild(div);
-+    const app =createApp(MessageBox);
+   const app =createApp(MessageBox);
 +    app.mount(div);
 }
 export default showMsg;
