@@ -1,11 +1,5 @@
 [
     {
-        "id": 1,
-        "postName": "Blog成功搭建",
-        "location": "HelloWorld",
-        "description": "第一篇文章"
-    },
-    {
         "id": 2,
         "postName": "ddns-go使用教程",
         "location": "ddns.go-shi-yong-jiao-cheng",
