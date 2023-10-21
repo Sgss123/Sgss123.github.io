@@ -7,14 +7,16 @@ const routes = [{
 },
 {
     path: "/about",
+    name:"About",
     component: () => import('~/pages/AboutMe.vue')
 },
 {
     path: "/blog",
+    name:"List",
     component: () => import('~/pages/Blog.vue')
 }, {
     path: "/post/:id",
-    name:"blog",
+    name:"Blog",
     component: () => import('~/pages/ViewBlog.vue')
 },
 {

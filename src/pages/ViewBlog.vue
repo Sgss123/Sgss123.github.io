@@ -36,11 +36,13 @@ const queryDataId = (id, data) => {
 const markdownContent = ref('');
 watch(fileName, async (newFileName) => { // 当fileName变化时，执行下面的代码  
     console.log(newFileName);
-    console.log(`/blogs/${newFileName}.md`);
+    // console.log(`/blogs/${newFileName}.md`);
     if (newFileName) { // 确保newFileName有值，避免在fileName还未赋值时请求数据  
-        const response = await axios.get(`/blogs/${newFileName}.md`);
+        // const response = await axios.get(`/blogs/${newFileName}.md`);
+        const response = await axios.get(`/blogs/${newFileName}.html`);
         const markdown = response.data;
-        markdownContent.value = marked.marked(markdown);
+        // markdownContent.value = marked.marked(markdown);
+        markdownContent.value = markdown;
         // console.log(markdownContent);
     }
 });
