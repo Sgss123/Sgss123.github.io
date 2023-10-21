@@ -1,8 +1,9 @@
 <template>
     <p class="text-8xl font-extrabold py-4">{{ $route.params.id }} - {{ title }}</p>
-    <p>查看PDF版本：<a :href="`/blogs/pdf/${ fileName }.pdf`" :download="title" target="_blank">点击下载</a> | <a :href="`/blogs/pdf/${ fileName }.pdf`" target="_blank">在线查看</a></p>
+    <p>查看PDF版本：<a :href="`/blogs/pdf/${fileName}.pdf`" :download="title" target="_blank">点击下载</a> | <a
+            :href="`/blogs/pdf/${fileName}.pdf`" target="_blank">在线查看</a></p>
     <hr>
-    <div id="post" class="min-w-full markdown-body mb-2" v-html=" markdownContent "></div>
+    <div id="post" class="min-w-full markdown-body mb-2" v-html="markdownContent"></div>
 </template>
 <script setup>
 import 'github-markdown-css/github-markdown.css';
@@ -47,8 +48,6 @@ watch(fileName, async (newFileName) => { // 当fileName变化时，执行下面�
         // console.log(markdownContent);
     }
 });
-
-
 </script>
 <style >
 hr {
