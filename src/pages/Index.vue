@@ -1,7 +1,7 @@
 <template>
     <h1 class="font-serif text-6xl text-center">首页</h1>
-    <img src="https://v2.jinrishici.com/one.svg?font-size=50&spacing=2&color=DarkRed" alt="">
-    <el-button type="primary" @click="clickHandler">Primary</el-button>
+    <img src="https://v2.jinrishici.com/one.svg?font-size=50&spacing=2&color=DarkRed" alt="" class="m-auto">
+    <el-button type="primary" @click="clickHandler" class="m-auto">Primary</el-button>
     <html>
 
     <body>
@@ -54,7 +54,7 @@ h1[data-only]::after {
     -webkit-clip-path: ellipse(100px 100px at 0% 50%);
     clip-path: ellipse(100px 100px at 0% 50%);
     animation: spotlight 5s infinite;
-    background-image: url(https://images.unsplash.com/photo-1579546929518-9e396f3cc809?auto=format&fit=crop&q=80&w=3870&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-image: url(https://gradienthunt.com/gradients-images/45404.jpg);
     background-size: 150%;
     background-position: center center;
     -webkit-background-clip: text; 
