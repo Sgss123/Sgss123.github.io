@@ -54,7 +54,7 @@ h1[data-only]::after {
     -webkit-clip-path: ellipse(100px 100px at 0% 50%);
     clip-path: ellipse(100px 100px at 0% 50%);
     animation: spotlight 5s infinite;
-    background-image: url(https://gradienthunt.com/gradients-images/45404.jpg);
+    background-image: linear-gradient( 111.9deg,  rgba(221,49,49,1) 0.3%, rgba(0,8,119,1) 100.7% );
     background-size: 150%;
     background-position: center center;
     -webkit-background-clip: text; 
