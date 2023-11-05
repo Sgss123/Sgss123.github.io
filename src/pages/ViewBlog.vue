@@ -8,7 +8,7 @@
     <div id="post" class="min-w-full markdown-body mb-2" v-html="markdownContent"></div>
 </template>
 <script setup>
-import 'github-markdown-css/github-markdown-light.css';
+// import 'github-markdown-css/github-markdown-dark.css';
 import { useRoute } from 'vue-router';
 import { ref, watch } from 'vue';
 import axios from 'axios';
