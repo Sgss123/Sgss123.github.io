@@ -1,17 +1,18 @@
 <template>
     <p class="text-8xl font-extrabold py-4">{{ $route.params.id }} - {{ title }}</p>
-    <div v-if="pdfLocation"><p>查看PDF版本：<a :href="`/blogs/pdf/${pdfLocation}`" :download="title" target="_blank">点击下载</a> | <a
-            :href="`/blogs/pdf/${pdfLocation}`" target="_blank">在线查看</a></p></div>
+    <div v-if="pdfLocation">
+        <p>查看PDF版本：<a :href="`/blogs/pdf/${pdfLocation}`" :download="title" target="_blank">点击下载</a> | <a
+                :href="`/blogs/pdf/${pdfLocation}`" target="_blank">在线查看</a></p>
+    </div>
     <hr>
     <div id="post" class="min-w-full markdown-body mb-2" v-html="markdownContent"></div>
 </template>
 <script setup>
-import 'github-markdown-css/github-markdown.css';
-import { useRouter, useRoute } from 'vue-router';
+import 'github-markdown-css/github-markdown-light.css';
+import { useRoute } from 'vue-router';
 import { ref, watch } from 'vue';
 import axios from 'axios';
 import * as marked from 'marked';
-const router = useRouter();
 const route = useRoute();
 const list = ref([]);
 let fileName = ref("");
@@ -21,13 +22,10 @@ async function getData() {
     const res = await fetch("/postList.json");
     const finalRes = await res.json();
     list.value = finalRes;
-    console.log(list);
     const post = queryDataId(route.params.id, list.value);
-    console.log(post.id);
     fileName.value = post.location;
     pdfLocation.value = post.pdfLocation;
     title.value = post.postName;
-    // console.log(fileName);
 
 }
 getData();
@@ -39,15 +37,11 @@ const queryDataId = (id, data) => {
 }
 const markdownContent = ref('');
 watch(fileName, async (newFileName) => { // 当fileName变化时，执行下面的代码  
-    console.log(newFileName);
-    // console.log(`/blogs/${newFileName}.md`);
     if (newFileName) { // 确保newFileName有值，避免在fileName还未赋值时请求数据  
-        // const response = await axios.get(`/blogs/${newFileName}.md`);
         const response = await axios.get(`/blogs/${newFileName}`);
         const markdown = response.data;
         markdownContent.value = marked.marked(markdown);
         // markdownContent.value = markdown;
-        // console.log(markdownContent);
     }
 });
 </script>
