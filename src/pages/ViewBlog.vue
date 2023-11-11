@@ -41,7 +41,6 @@ watch(fileName, async (newFileName) => { // 当fileName变化时，执行下面�
         const response = await axios.get(`/blogs/${newFileName}`);
         const markdown = response.data;
         markdownContent.value = marked.marked(markdown);
-        // markdownContent.value = markdown;
     }
 });
 </script>

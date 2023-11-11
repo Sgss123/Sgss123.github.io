@@ -18,6 +18,10 @@ const routes = [{
     path: "/post/:id",
     name:"Blog",
     component: () => import('~/pages/ViewBlog.vue')
+},{
+    path: "/playground",
+    name:"Editor",
+    component: () => import('~/components/Editor.vue')
 },
 {
     path: '/:pathMatch(.*)*',
