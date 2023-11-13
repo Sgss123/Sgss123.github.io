@@ -9,15 +9,20 @@
     </ul>
 </template>
 <script setup>
-import { ref } from 'vue';
+import { ref, onMounted } from 'vue';
+
 const list = ref([]);
-async function getData() {
-    const res = await fetch("/postList.json");
-    const finalRes = await res.json();
-    list.value = finalRes;
-}
-getData();
-console.log(list)
+
+onMounted(async () => {
+    try {
+        const res = await fetch("/postList.json");
+        const finalRes = await res.json();
+        list.value = finalRes;
+    } catch (error) {
+        console.error(error);
+    }
+});
 </script>
+
 
 <style scoped></style>

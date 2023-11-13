@@ -8,27 +8,30 @@
     <div id="post" class="min-w-full markdown-body mb-2" v-html="markdownContent"></div>
 </template>
 <script setup>
-// import 'github-markdown-css/github-markdown-dark.css';
+import 'github-markdown-css/github-markdown.css';
 import { useRoute } from 'vue-router';
 import { ref, watch } from 'vue';
 import axios from 'axios';
 import * as marked from 'marked';
 const route = useRoute();
 const list = ref([]);
-let fileName = ref("");
-let pdfLocation = ref("");
-let title = ref("");
-async function getData() {
+const fileName = ref("");
+const pdfLocation = ref("");
+const title = ref("");
+(async function () {
     const res = await fetch("/postList.json");
     const finalRes = await res.json();
     list.value = finalRes;
     const post = queryDataId(route.params.id, list.value);
+    if (post) {
+        fileName.value = post.location;
+        pdfLocation.value = post.pdfLocation;
+        title.value = post.postName;
+    }
     fileName.value = post.location;
     pdfLocation.value = post.pdfLocation;
     title.value = post.postName;
-
-}
-getData();
+})();
 const queryDataId = (id, data) => {
     for (var i = 0; i < data.length; i++) {
         if (id == data[i].id)
@@ -36,8 +39,9 @@ const queryDataId = (id, data) => {
     }
 }
 const markdownContent = ref('');
-watch(fileName, async (newFileName) => { // 当fileName变化时，执行下面的代码  
-    if (newFileName) { // 确保newFileName有值，避免在fileName还未赋值时请求数据  
+watch(fileName, async (newFileName) => {
+    // 确保newFileName有值，避免在fileName还未赋值时请求数据
+    if (newFileName) {
         const response = await axios.get(`/blogs/${newFileName}`);
         const markdown = response.data;
         markdownContent.value = marked.marked(markdown);

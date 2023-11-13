@@ -11,5 +11,11 @@
         "location": "vue-messagebox.common-jsx.html",
         "pdfLocation": "vue-messagebox.common-jsx.pdf",
         "description": "将弹窗组件封装为jsx文件，命令式组件"
+    },
+    {
+        "id": 4,
+        "postName": "防抖函数",
+        "location": "debounce.md",
+        "description": "防抖函数"
     }
 ]
