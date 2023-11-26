@@ -17,5 +17,11 @@
         "postName": "防抖函数",
         "location": "debounce.html",
         "description": "防抖函数"
+    },
+    {
+        "id": 5,
+        "postName": "聚光灯效果",
+        "location": "css/Juguangdeng.md",
+        "description": "聚光灯效果"
     }
 ]

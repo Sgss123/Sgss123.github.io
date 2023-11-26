@@ -7,20 +7,29 @@ const routes = [{
 },
 {
     path: "/about",
-    name:"About",
+    name: "About",
     component: () => import('~/pages/AboutMe.vue')
 },
 {
     path: "/blog",
-    name:"List",
+    name: "List",
     component: () => import('~/pages/Blog.vue')
 }, {
     path: "/post/:id",
-    name:"Blog",
+    name: "Blog",
     component: () => import('~/pages/ViewBlog.vue')
-},{
+}, {
+    path: "/css",
+    name: "Css",
+    component: () => import('~/pages/CssView.vue')
+}, 
+{
+    path: "/css/:id",
+    name: "CssView",
+    component: () => import('~/pages/ViewCSS.vue')
+}, {
     path: "/playground",
-    name:"Editor",
+    name: "Editor",
     component: () => import('~/components/Editor.vue')
 },
 {

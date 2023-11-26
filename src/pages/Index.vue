@@ -19,7 +19,6 @@ const clickHandler = () => {
         close();
     });
 };
-
 </script>
 <style scoped>
 html {
@@ -36,16 +35,18 @@ body {
 }
 
 h1[data-only] {
+    font-weight: bold;
     color: #333;
     font-family: Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     font-size: 8rem;
-    letter-spacing: -0.3rem;
+    /* letter-spacing: -0.3rem; */
     position: relative;
 }
 
 h1[data-only]::after {
+    font-weight: bold;
     content: attr(data-content);
     color: transparent;
     position: absolute;
@@ -54,10 +55,9 @@ h1[data-only]::after {
     -webkit-clip-path: ellipse(100px 100px at 0% 50%);
     clip-path: ellipse(100px 100px at 0% 50%);
     animation: spotlight 5s infinite;
-    background-image: linear-gradient( 69.7deg,  rgba(244,37,243,1) 1.4%, rgba(244,87,1,1) 36.2%, rgba(255,204,37,1) 72.2%, rgba(20,196,6,1) 113% );
-    /* background-size: 150%; */
+    background-image: linear-gradient(69.7deg, rgba(244, 37, 243, 1) 1.4%, rgba(244, 87, 1, 1) 36.2%, rgba(255, 204, 37, 1) 72.2%, rgba(20, 196, 6, 1) 113%);
     background-position: center center;
-    -webkit-background-clip: text; 
+    -webkit-background-clip: text;
     background-clip: text;
 }
 
@@ -76,5 +76,4 @@ h1[data-only]::after {
         -webkit-clip-path: ellipse(100px 100px at 0% 50%);
         clip-path: ellipse(100px 100px at 0% 50%);
     }
-}
-</style>
+}</style>
