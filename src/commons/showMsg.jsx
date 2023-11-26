@@ -1,7 +1,6 @@
 import Btn from "~/components/Btn.vue"
 import { createApp } from "vue"
 import { styled } from "@styils/vue";
-
 const DivModal = styled('div', {
     position: 'fixed',
     width: '100%',
@@ -28,7 +27,6 @@ const DivBox = styled('div', {
 const DivText = styled('div', {
     marginBottom: '1em',
 });
-
 const MessageBox = {
     props: {
         msg: {
@@ -47,7 +45,6 @@ const MessageBox = {
             </DivModal>);
     }
 }
-
 function showMsg(msg, clickHandler) {
     const div = document.createElement('div');
     document.body.appendChild(div);
