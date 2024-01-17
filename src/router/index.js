@@ -19,15 +19,6 @@ const routes = [{
     name: "Blog",
     component: () => import('~/pages/ViewBlog.vue')
 }, {
-    path: "/css",
-    name: "Css",
-    component: () => import('~/pages/CssView.vue')
-}, 
-{
-    path: "/css/:id",
-    name: "CssView",
-    component: () => import('~/pages/ViewCSS.vue')
-}, {
     path: "/playground",
     name: "Editor",
     component: () => import('~/components/Editor.vue')
