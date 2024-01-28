@@ -18,7 +18,7 @@
 </html>
 ```
 
-###　创建一个 css 文件，名为`index.css`
+### 创建一个 css 文件，名为`index.css`
 
 在 html 中这样引入他：
 

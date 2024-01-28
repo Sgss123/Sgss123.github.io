@@ -2,7 +2,7 @@
 
 ## **目录 disc**
 
-* [特性 characteristics](#characteristics) 
+* [特性 characteristics](#characteristics)
 * [下载 download](#download)
 * [配置 configuration](#configuration)
 
@@ -44,9 +44,7 @@
 
 双击`ddns-go.exe`
 
-
 在浏览器中输入[localhost:9876](http://localhost:9876)
-
 
 弹出如下界面
 

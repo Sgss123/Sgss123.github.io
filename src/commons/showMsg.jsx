@@ -1,6 +1,7 @@
 import Btn from "~/components/Btn.vue"
-import { createApp } from "vue"
-import { styled } from "@styils/vue";
+import {createApp} from "vue"
+import {styled} from "@styils/vue";
+
 const DivModal = styled('div', {
     position: 'fixed',
     width: '100%',
@@ -35,7 +36,7 @@ const MessageBox = {
         },
     },
     render(ctx) {
-        const { $props, $emit } = ctx;
+        const {$props, $emit} = ctx;
         return (
             <DivModal>
                 <DivBox>
@@ -45,6 +46,7 @@ const MessageBox = {
             </DivModal>);
     }
 }
+
 function showMsg(msg, clickHandler) {
     const div = document.createElement('div');
     document.body.appendChild(div);
@@ -59,4 +61,5 @@ function showMsg(msg, clickHandler) {
     });
     app.mount(div);
 }
+
 export default showMsg;

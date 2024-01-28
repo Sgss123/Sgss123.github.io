@@ -2,14 +2,15 @@
 
 ## **目录 disc**
 
-* [教程 Tutorial](#tutorial) 
+* [教程 Tutorial](#tutorial)
 * [效果演示 Effect Show](#demo)
 
 ## <h2 id="tutorial">教程 Tutorial</h2>
+
 弹窗属于通用型的功能，在各个场景中都可能用到。开发仅需要一次，使用却需要很多次，因此着重考虑使用时的成本。
 
-
 组件式
+
 ```vue
 <!-- MessageBox.vue -->
 <template>
@@ -42,7 +43,9 @@ defineProps({
 }
 </style>
 ```
+
 开发十分简单，但是使用呢？
+
 ```vue 
 <!-- App.vue -->
 <template>
@@ -62,6 +65,7 @@ const clickHandler = () => {
 };
 </script>
 ```
+
 是否十分甚至九分麻烦？
 
 那么能否不导入任何组件使用呢？
@@ -86,6 +90,7 @@ const clickHandler = () => {
 };
 </script>
 ```
+
 稍作修改
 
 这样过后 开发就不会那么容易了。
@@ -93,6 +98,7 @@ const clickHandler = () => {
 但是，这是**通用型的功能**，因此不用太多地考虑开发成本。
 
 所以在js文件里定义一个函数
+
 ```javascript
 // ~/commons/showMsg.js
 function showMsg() {
@@ -100,7 +106,9 @@ function showMsg() {
 }
 export default showMsg;
 ```
+
 在函数里接受两个参数，一个是消息内容，另一个是事件.
+
 ```diff
 // ~/commons/showMsg.js
 - function showMsg() {
@@ -111,9 +119,11 @@ export default showMsg;
 + }
 export default showMsg;
 ```
+
 这个方法是为了渲染MessageBox。
 
 导入刚才的MessageBox.vue
+
 ```diff
 // ~/commons/showMsg.js
 + import Message from "~/components/MessageBox.vue"
@@ -122,9 +132,11 @@ function showMsg(msg,clickHandler) {
 }
 export default showMsg;
 ```
+
 怎么渲染呢？
 
 我们看看Vue怎么渲染的
+
 ```javascript
 // main.js
 import { createApp } from 'vue'
@@ -139,7 +151,6 @@ app.mount('#app')
 
 所以我们把这个事情也做一遍。
 
-
 ```diff
 // ~/commons/showMsg.js
 + import { createApp } from 'vue'
@@ -150,7 +161,9 @@ function showMsg(msg,clickHandler) {
 }
 export default showMsg;
 ```
+
 但是app已经被主页面挂载了，所以我们要换一个。
+
 ```diff
 // ~/commons/showMsg.js
 import { createApp } from 'vue'
@@ -168,6 +181,7 @@ export default showMsg;
 刷新页面，发现弹窗已经出来了，但是没有内容。
 
 所以现在我们要接受两个属性
+
 ```diff
 // ~/commons/showMsg.js
 import { createApp } from 'vue'
@@ -190,9 +204,11 @@ function showMsg(msg,clickHandler) {
 }
 export default showMsg;
 ```
+
 完事
 
 现在我们使用方法就可以调用了
+
 ```vue
 <!-- App.vue -->
 <script setup>
@@ -207,9 +223,11 @@ const clickHandler = () => {
 };
 </script>
 ```
+
 目前这种写法并不是很好，因为他拆开成了几个文件`showMsg.js`和`MessageBox.js`。
 
 所以我们要合并成一个文件。
+
 ```diff
 // ~/commons/showMsg.js
 import { createApp } from 'vue'
@@ -253,19 +271,24 @@ function showMsg(msg,clickHandler) {
 }
 export default showMsg;
 ```
+
 接下来就是添加样式。
 
 这里使用`@styils/vue`
+
 ```bash
 $ npm instll @styils/vue
 ```
 
 导入`@styils/vue`
+
 ```javascript
 // showMsg.js
 import { styled } from "@styils/vue";
 ```
+
 写样式
+
 ```javascript
 // showMsg.js
 const DivModal = styled('div', {
@@ -278,9 +301,11 @@ const DivText = styled('div', {
     ...
 });
 ```
+
 注意带横线的样式转换为驼峰写法。
 
 修改显示
+
 ```diff
 // showMsg.js
 ...
@@ -306,6 +331,7 @@ const DivText = styled('div', {
 ```
 
 最终文件
+
 ```javascript
 // showMsg.js
 import { createApp } from 'vue'

@@ -3,7 +3,7 @@
 
 
 * {
-	font-family: 'Noto Sans SC', sans-serif;
+    font-family: 'Noto Sans SC', sans-serif;
 }
 
 body,
@@ -28,8 +28,8 @@ td,
 textarea,
 th,
 ul {
-	margin: 0;
-	padding: 0
+    margin: 0;
+    padding: 0
 }
 
 h1,
@@ -38,68 +38,68 @@ h3,
 h4,
 h5,
 h6 {
-	font-size: 100%
+    font-size: 100%
 }
 
 em,
 i {
-	font-style: normal;
-	font-weight: 400
+    font-style: normal;
+    font-weight: 400
 }
 
 button,
 input,
 select,
 textarea {
-	font-family: PingFangSC-Light, 'STHeiti Light', 'helvetica neue', 'hiragino sans gb', arial, 'microsoft yahei ui', 'microsoft yahei', simsun, sans-serif
+    font-family: PingFangSC-Light, 'STHeiti Light', 'helvetica neue', 'hiragino sans gb', arial, 'microsoft yahei ui', 'microsoft yahei', simsun, sans-serif
 }
 
 button,
 input,
 select {
-	box-sizing: border-box
+    box-sizing: border-box
 }
 
 button {
-	border: none
+    border: none
 }
 
 button,
 input[type=button],
 input[type=submit],
 select {
-	cursor: pointer
+    cursor: pointer
 }
 
 table {
-	border-collapse: collapse;
-	border-spacing: 0
+    border-collapse: collapse;
+    border-spacing: 0
 }
 
 li {
-	list-style: none
+    list-style: none
 }
 
 a {
-	text-decoration: none
+    text-decoration: none
 }
 
 a img,
 fieldset,
 iframe,
 img {
-	border-width: 0;
-	border-style: none
+    border-width: 0;
+    border-style: none
 }
 
 .clearfix:after,
 .clearfix:before {
-	content: "";
-	display: table
+    content: "";
+    display: table
 }
 
 .clearfix:after {
-	clear: both
+    clear: both
 }
 
 /* html {
