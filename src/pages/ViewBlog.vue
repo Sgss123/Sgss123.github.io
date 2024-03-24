@@ -21,8 +21,7 @@ const pdfLocation = ref("");
 const title = ref("");
 (async function () {
   const res = await fetch("/postList.json");
-  const finalRes = await res.json();
-  list.value = finalRes;
+  list.value = await res.json();
   const post = queryDataId(route.params.id, list.value);
   if (post) {
     fileName.value = post.location;

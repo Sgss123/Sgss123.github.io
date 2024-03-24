@@ -5,9 +5,9 @@
   <html>
 
   <body>
-  <div class="logotit">
-    <h1 data-content="Sgss的博客" data-only>Sgss的博客</h1>
-  </div>
+    <div class="logotit">
+      <h1 data-content="Sgss的博客" data-only>Sgss的博客</h1>
+    </div>
   </body>
 
   </html>
@@ -16,7 +16,7 @@
 import showMsg from '~/commons/showMsg.jsx';
 
 const clickHandler = () => {
-  showMsg('内存不能为“Read”', (close) => {
+  showMsg('这是一个弹窗', (close) => {
     close();
   });
 };
@@ -77,4 +77,5 @@ h1[data-only]::after {
     -webkit-clip-path: ellipse(100px 100px at 0% 50%);
     clip-path: ellipse(100px 100px at 0% 50%);
   }
-}</style>
+}
+</style>

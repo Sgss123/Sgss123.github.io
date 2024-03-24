@@ -8,7 +8,7 @@
   {
     "id": 3,
     "postName": "Vue 弹窗组件封装",
-    "location": "vue-messagebox.common-jsx.html",
+    "location": "vue-messagebox.common-jsx.md",
     "pdfLocation": "vue-messagebox.common-jsx.pdf",
     "description": "将弹窗组件封装为jsx文件，命令式组件"
   },
