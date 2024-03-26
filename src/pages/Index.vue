@@ -16,7 +16,7 @@
 import showMsg from '~/commons/showMsg.jsx';
 
 const clickHandler = () => {
-  showMsg('这是一个弹窗', (close) => {
+  showMsg('这是一个弹窗，详情请移步至blog查询', (close) => {
     close();
   });
 };
