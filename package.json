@@ -16,11 +16,8 @@
     "element-plus": "^2.3.7",
     "github-markdown-css": "^5.2.0",
     "highlight.js": "^11.9.0",
-    "lorem-ipsum": "^2.0.8",
     "marked": "^8.0.1",
     "monaco-editor": "^0.44.0",
-    "monaco-editor-nls": "^3.1.0",
-    "monaco-editor-webpack-plugin": "^7.1.0",
     "vue": "^3.2.47",
     "vue-router": "^4.2.2"
   },
