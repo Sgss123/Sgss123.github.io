@@ -9,7 +9,7 @@
       <router-link class="text-blue-500 hover:(text-blue-700)" to="/about">关于</router-link>
     </li>
     <li>
-      <router-link class="text-blue-500 hover:(text-blue-700)" to="/blog">Blog</router-link>
+      <router-link class="text-blue-500 hover:(text-blue-700)" to="/blog">博客</router-link>
     </li>
   </ul>
 </template>
