@@ -112,11 +112,10 @@ export default showMsg;
 ```diff
 // ~/commons/showMsg.js
 - function showMsg() {
--    
-- }
 + function showMsg(msg,clickHandler) {
-+ 
-+ }
+  
+}
+
 export default showMsg;
 ```
 
