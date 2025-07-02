@@ -1,13 +1,13 @@
 <template>
-  <v-footer class="text-center d-flex" app height="50">
+  <v-footer app class="text-center d-flex" height="50">
     <div class="d-flex ga-3">
       <v-btn
-        v-for="[icon, link] in links"
+        v-for="([icon, link], index) in links"
         :key="index"
-        :icon="icon"
         class="social-link"
         :href="link"
-      ></v-btn>
+        :icon="icon"
+      />
     </div>
 
     <div
@@ -17,15 +17,16 @@
       &copy; 2021-{{ new Date().getFullYear() }}
       <span class="d-none d-sm-inline-block">MFJip</span>
       — All rights reserved.
+      <v-btn href="https://icp.gov.moe/?keyword=20229994" variant="text">萌ICP备20229994号</v-btn>
     </div>
   </v-footer>
 </template>
 
 <script setup>
-const links = [
-  ["mdi-twitter", "https://x.com/Sgss740417"],
-  ["mdi-github", "https://github.com/Sgss123"],
-];
+  const links = [
+    ['mdi-twitter', 'https://x.com/Sgss740417'],
+    ['mdi-github', 'https://github.com/Sgss123'],
+  ]
 </script>
 
 <style scoped lang="sass">

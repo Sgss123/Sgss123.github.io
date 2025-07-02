@@ -2,9 +2,9 @@
   <div class="nav">
     <nav>
       <v-app-bar app dark>
-        <v-avatar image="@/assets/imgs/avatar.jpg" class="border-sm"></v-avatar>
+        <v-avatar class="border-sm" image="@/assets/imgs/avatar.jpg" />
         <v-toolbar-title>MFJip</v-toolbar-title>
-        <v-spacer></v-spacer>
+        <v-spacer />
         <v-btn text to="/">Home</v-btn>
         <v-btn text to="/about">About</v-btn>
         <v-btn text to="/contact">Contact</v-btn>
