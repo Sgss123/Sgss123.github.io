@@ -21,17 +21,16 @@
         class="record"
         href="https://icp.gov.moe/?keyword=20229994"
         variant="text"
-        >萌ICP备20229994号</v-btn
-      >
+      >萌ICP备20229994号</v-btn>
     </div>
   </v-footer>
 </template>
 
 <script setup>
-const links = [
-  ["mdi-twitter", "https://x.com/Sgss740417"],
-  ["mdi-github", "https://github.com/Sgss123"],
-];
+  const links = [
+    ['mdi-twitter', 'https://x.com/Sgss740417'],
+    ['mdi-github', 'https://github.com/Sgss123'],
+  ]
 </script>
 
 <style scoped lang="sass">
