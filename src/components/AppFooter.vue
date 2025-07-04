@@ -17,16 +17,21 @@
       &copy; 2021-{{ new Date().getFullYear() }}
       <span class="d-none d-sm-inline-block">MFJip</span>
       — All rights reserved.
-      <v-btn href="https://icp.gov.moe/?keyword=20229994" variant="text">萌ICP备20229994号</v-btn>
+      <v-btn
+        class="record"
+        href="https://icp.gov.moe/?keyword=20229994"
+        variant="text"
+        >萌ICP备20229994号</v-btn
+      >
     </div>
   </v-footer>
 </template>
 
 <script setup>
-  const links = [
-    ['mdi-twitter', 'https://x.com/Sgss740417'],
-    ['mdi-github', 'https://github.com/Sgss123'],
-  ]
+const links = [
+  ["mdi-twitter", "https://x.com/Sgss740417"],
+  ["mdi-github", "https://github.com/Sgss123"],
+];
 </script>
 
 <style scoped lang="sass">
@@ -37,4 +42,9 @@
 
   &:hover
     color: rgba(25, 118, 210, 1)
+
+.record
+  color: #f400a1
+  &:hover
+    color: gray !important
 </style>
