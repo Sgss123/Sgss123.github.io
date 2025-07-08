@@ -1,6 +1,6 @@
 <template>
   <AppNavbar />
-  <AboutMe />
+  <QSL />
   <AppFooter />
 </template>
 <script setup>
