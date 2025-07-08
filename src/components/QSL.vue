@@ -49,18 +49,18 @@
         <v-tabs-window-item value="4">
           <v-container class="w-100 d-flex justify-center align-center">
             <v-sheet class="w-100">
-              <v-form class="d-flex flex-column justify-center align-center">
+              <v-form class="d-flex flex-column justify-center align-center" @submit="eQSLSubmit">
                 <span class="text-h5">领取eQSL</span>
                 <v-spacer />
                 <v-text-field
-                  class="w-50"
+                  class="w-25"
                   clearable
                   label="您的呼号"
                   :rules="[rules.required]"
                 />
                 <v-text-field
                   v-model="email"
-                  class="w-50"
+                  class="w-25"
                   clearable
                   label="E-mail"
                   :rules="[rules.required, rules.email]"
@@ -72,7 +72,7 @@
                     site-key="0x4AAAAAABkS4AjGy6vPeTBH"
                   />
                 </div>
-                <v-btn type="submit">获取</v-btn>
+                <v-btn v-if="token" class="bg-light-blue-darken-2" @click="eQSLSubmit">获取</v-btn>
               </v-form>
             </v-sheet>
           </v-container>
@@ -99,5 +99,17 @@
         = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
       return pattern.test(value) || 'Invalid e-mail.'
     },
+  }
+
+  const eQSLSubmit = () => {
+    if (token.value) {
+      // Perform the eQSL submission logic here
+      console.log('eQSL submitted with token:', token.value)
+      // Reset the token after submission
+      token.value = null
+      reCaptchaTurnstile.value.reset()
+    } else {
+      console.error('Please complete the reCAPTCHA.')
+    }
   }
 </script>
