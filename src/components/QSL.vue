@@ -53,14 +53,14 @@
                 <span class="text-h5">领取eQSL</span>
                 <v-spacer />
                 <v-text-field
-                  class="w-25"
+                  class="w-50"
                   clearable
                   label="您的呼号"
                   :rules="[rules.required]"
                 />
                 <v-text-field
                   v-model="email"
-                  class="w-25"
+                  class="w-50"
                   clearable
                   label="E-mail"
                   :rules="[rules.required, rules.email]"
