@@ -1,0 +1,41 @@
+@font-face {
+	font-family: mcT2;
+	font-style: normal;
+	font-weight: 400;
+	src: url("@/assets/fonts/Minecraft-Tenv2.woff2") format("woff")
+}
+
+@font-face {
+	font-family: mcS2;
+	font-style: normal;
+	font-weight: 400;
+	src: url("@/assets/fonts/Minecraft-Seven_v2.woff2") format("woff")
+}
+
+@font-face {
+	font-family: mcae;
+	font-style: normal;
+	font-weight: 700;
+	src: url("@/assets/fonts/mc/mcae.ttf") format("truetype")
+}
+
+@font-face {
+	font-family: mcalt;
+	src: url("@/assets/fonts/mc/mcalt.ttf") format("truetype");
+}
+
+.mcae {
+	font-family: mcae !important;
+}
+
+.mcT2 {
+	font-family: mcT2 !important;
+}
+
+.mcS2 {
+	font-family: mcS2 !important;
+}
+
+.mcalt {
+	font-family: mcalt !important;
+}

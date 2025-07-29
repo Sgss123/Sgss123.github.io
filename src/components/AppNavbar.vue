@@ -12,3 +12,9 @@
     </nav>
   </div>
 </template>
+
+<style scoped>
+.nav {
+  font-family: mcae, sans-serif;
+}
+</style>
