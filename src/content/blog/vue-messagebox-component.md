@@ -2,6 +2,7 @@
 title: 'Vue 弹窗组件封装'
 description: 'Vue弹窗组件封装'
 pubDate: 'Mar 15 2024'
+heroImage: '../../assets/vue-messagebox.png'
 ---
 
 ## 教程 Tutorial
