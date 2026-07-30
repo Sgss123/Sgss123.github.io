@@ -1,0 +1,9 @@
+{
+	"name": "mfjip612-github-io",
+	"framework": "vue",
+	"buildCommand": "pnpm run build",
+	"outputDirectory": "dist/client",
+	"installCommand": "pnpm install",
+	"devCommand": "pnpm run dev",
+	"environmentVariables": {}
+}

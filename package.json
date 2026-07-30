@@ -12,7 +12,8 @@
 		"deploy": "pnpm run build && wrangler deploy",
 		"cf-typegen": "wrangler types",
 		"render:html": "tsx scripts/render-html.ts",
-		"ssg:info": "cat dist/ssg-routes.json | jq ."
+		"ssg:info": "cat dist/ssg-routes.json | jq .",
+		"dev:edgeone": "edgeone pages dev"
 	},
 	"dependencies": {
 		"@monaco-editor/loader": "^1.7.0",

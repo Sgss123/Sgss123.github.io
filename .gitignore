@@ -44,3 +44,7 @@ __screenshots__/
 !.dev.vars.example
 .env*
 !.env.example
+!.env.edgeone.example
+
+# EdgeOne files
+.edgeone

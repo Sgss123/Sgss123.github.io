@@ -10,6 +10,7 @@
       <p class="layout-footer__copy">
         &copy; 2026 MFJip612 &mdash; built with caffeine and curiosity
       </p>
+      <p class="layout-footer__copy"><a href="https://beian.miit.gov.cn">粤ICP备2026106743号</a></p>
       <p class="layout-footer__echo">
         <span class="layout-footer__echo-dollar">$</span> echo &quot;hello world&quot;
       </p>
