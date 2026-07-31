@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory, type RouteRecordRaw } from 'vue-router'
+import { createMemoryHistory, createRouter, createWebHistory, type RouteRecordRaw } from 'vue-router'
 import articleRoutes from './articles'
 import type { PageMeta } from '@/types'
 
@@ -42,9 +42,13 @@ if (articleComponent) {
 	} as RouteRecordRaw);
 }
 
-const router = createRouter({
-	history: createWebHistory(),
-	routes: [...routes, ...articleRoutes],
-});
+export function createAppRouter() {
+	return createRouter({
+		history: import.meta.env.SSR ? createMemoryHistory() : createWebHistory(),
+		routes: [...routes, ...articleRoutes],
+	});
+}
+
+const router = createAppRouter()
 
 export default router;

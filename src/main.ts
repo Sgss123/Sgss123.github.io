@@ -1,11 +1,18 @@
 import './assets/main.css'
 
-import { createApp } from 'vue'
+import { createApp, createSSRApp } from 'vue'
 import App from './App.vue'
+import type { Router } from 'vue-router'
 import router from './router'
 
-const app = createApp(App)
+export function createAppInstance(routerInstance: Router = router) {
+  const app = import.meta.env.SSR ? createSSRApp(App) : createApp(App)
+  app.use(routerInstance)
+  return app
+}
 
-app.use(router)
+if (!import.meta.env.SSR) {
+  createAppInstance().mount('#app')
+}
 
-app.mount('#app')
+export default createAppInstance

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, computed, watch, nextTick, createApp, onBeforeUnmount, type App as VueApp } from 'vue'
+import { ref, computed, watch, nextTick, createApp, onBeforeUnmount, onMounted, type App as VueApp } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { marked } from 'marked'
 import 'katex/dist/katex.min.css'
@@ -42,6 +42,7 @@ const articleId = computed(() => route.meta?.articleId as string)
 const currentMeta = computed(() => route.meta as unknown as ArticleMeta)
 const html = ref('')
 const loading = ref(true)
+const isClient = typeof window !== 'undefined'
 
 // ── 目录大纲（中栏） ────────────────────────────────────
 interface TocItem {
@@ -67,6 +68,10 @@ marked.setOptions({ renderer })
 
 // 从渲染后的 HTML 提取标题生成目录
 function extractToc(htmlStr: string) {
+  if (!isClient) {
+    return { html: htmlStr, toc: [] }
+  }
+
   const div = document.createElement('div')
   div.innerHTML = htmlStr
   const headings = div.querySelectorAll('h1, h2, h3, h4, h5, h6')
@@ -112,8 +117,10 @@ async function loadArticle(id: string) {
 
     if (loadToken !== latestLoadToken) return
 
-    mountCodeBlocks()
-    setupScrollSpy()
+    if (isClient) {
+      mountCodeBlocks()
+      setupScrollSpy()
+    }
   } finally {
     if (loadToken === latestLoadToken) {
       loading.value = false
@@ -187,6 +194,12 @@ watch(
   },
   { immediate: true }
 )
+
+onMounted(() => {
+  if (isClient && articleId.value) {
+    loadArticle(articleId.value)
+  }
+})
 
 onBeforeUnmount(() => {
   observer?.disconnect()
