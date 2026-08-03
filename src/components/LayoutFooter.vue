@@ -2,7 +2,7 @@
 /**
  * LayoutFooter — shared by every page.
  */
-import beianEmblem from '@/assets/images/beian-police-emblem.jpg'
+import beianEmblem from '@/assets/images/beian-police-emblem.png'
 </script>
 
 <template>
