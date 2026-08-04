@@ -3,8 +3,8 @@
  * 在构建完成后生成静态 HTML 文件
  * 
  * 使用方式：
- * 1. pnpm run build              (构建应用)
- * 2. pnpm run render:html        (预渲染 HTML)
+ * 1. bun run build              (构建应用)
+ * 2. bun run render:html        (预渲染 HTML)
  */
 import { promises as fs } from 'node:fs'
 import { resolve, dirname } from 'node:path'

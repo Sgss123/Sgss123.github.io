@@ -5,28 +5,27 @@
 ## Project Overview
 
 - **Name**: mfjip612-github-io
-- **Type**: Personal blog (Vue 3 + Vike SSR + Cloudflare Workers)
+- **Type**: Personal blog (Vue 3 + Vite + SSG)
 - **Domain**: https://www.waterspo.top
 
 ## Tech Stack
 
-- **Framework**: Vue 3 + Vike (SSR file-based routing)
+- **Framework**: Vue 3 + Vite
 - **Styling**: Tailwind CSS v4 + shadcn-vue (New York style)
 - **Animation**: GSAP + animate.css
 - **UI Components**: Lucide icons, reka-ui, class-variance-authority
 - **Content**: Markdown (.md as assets), KaTeX, Mermaid, Shiki code highlighting
 - **Media**: xgplayer (video player)
-- **Deployment**: Cloudflare Workers (via Wrangler)
-- **Package Manager**: pnpm
+- **Deployment**: Tencent EdgeOne Makers (via Git integration)
+- **Package Manager**: bun
 
 ## Key Commands
 
 ```bash
-pnpm run dev          # Dev server (port 5173)
-pnpm run build        # Type check + build (vue-tsc && vike build)
-pnpm run preview      # Build + run locally with Wrangler
-pnpm run deploy       # Build + deploy to Cloudflare
-pnpm run type-check   # vue-tsc --noEmit
+bun run dev           # Dev server (port 5173)
+bun run build         # Type check + build (vue-tsc && vite build && SSG render)
+bun run type-check    # vue-tsc --noEmit
+bun run dev:edgeone   # EdgeOne Makers local dev
 ```
 
 ## Project Structure
@@ -53,8 +52,8 @@ src/
   assets/              # Static assets (CSS, images)
   router/              # Router-related code
 
-server/                # Cloudflare Worker server entry
-dist/                  # Build output (client + server)
+edge-functions/        # EdgeOne Makers edge functions
+dist/                  # Build output (client)
 ```
 
 ## Conventions
@@ -81,18 +80,17 @@ dist/                  # Build output (client + server)
 ### Build
 
 - Client assets output: `dist/client/`
-- Server SSR output: `dist/server/`
+- SSG pre-render via `scripts/render-html.ts`
 - Manual chunks: vue, highlight.js, katex, animate.css, gsap
 
-### Server
+### Edge Functions
 
-- Entry: `server/index.js`
-- Cloudflare Workers with `nodejs_compat` flag
-- Static assets served from `dist/client/` via ASSETS binding
+- EdgeOne Makers edge functions live in `edge-functions/`
+- `/api` endpoint: `edge-functions/api/index.js`
 
 ## Important Notes
 
-- Vike handles app entry (no `src/main.ts` / `vue-router`)
-- SSR is enabled
-- Custom Vite plugins: `vite-plugin-sitemap.ts`, `vite-plugin-rss.ts`
+- Vue SPA entry: `src/main.ts` / `src/router`
+- Static site generation (SSG) via `scripts/render-html.ts`
+- Custom Vite plugins: `vite-ssg-plugin.ts`
 - Base URL: `https://www.waterspo.top`

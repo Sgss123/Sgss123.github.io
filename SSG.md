@@ -54,10 +54,10 @@ export default meta
 
 ```bash
 # 完整构建（包括 SSG）
-pnpm run build
+bun run build
 
 # 仅构建客户端
-pnpm run build-only
+bun run build-only
 
 # 查看 SSG 清单信息
 cat dist/client/ssg-routes.json
@@ -109,7 +109,7 @@ cat dist/client/ssg-routes.json
 文件：`scripts/pre-render.ts`
 
 - 生成 SSG 配置清单
-- 可独立运行：`pnpm run ssg:config`
+- 可独立运行：`bun run ssg:config`
 
 ### 配置文件
 
@@ -148,23 +148,14 @@ interface ArticleMeta extends PageMeta {
 
 1. **页面 SSG**：为重要的静态内容页面启用 SSG，如关于页面、文章列表等
 2. **文章 SSG**：默认所有文章启用 SSG，除非有特殊原因禁用
-3. **部署优化**：结合 Cloudflare Pages 进行部署，利用边缘计算能力
+3. **部署优化**：结合 EdgeOne Makers 进行部署，利用边缘计算能力
 4. **缓存策略**：SSG 页面应设置合理的缓存头
 
 ## 集成建议
 
-### Cloudflare Pages
+### EdgeOne Makers
 
-SSG 清单可用于 Cloudflare Pages 的部署优化：
-
-```javascript
-// _routes.json 中使用 SSG 清单
-{
-  "version": 1,
-  "include": ["/", "/article", "/article/*"],
-  "exclude": ["/api/*"]
-}
-```
+SSG 清单可用于 EdgeOne Makers 的部署优化，构建产物位于 `dist/client/`，由 `edgeone.json` 指定输出目录并自动部署。
 
 ### 预部署检查
 
@@ -180,7 +171,7 @@ cat dist/ssg-routes.json | jq '.routes | length'
 **解决方案**：
 1. 确保至少有一个页面或文章设置了 `isSSG: true`
 2. 检查构建输出中是否有错误
-3. 运行 `pnpm run ssg:config` 查看详细输出
+3. 运行 `bun run ssg:config` 查看详细输出
 
 ### 问题：构建缓慢
 

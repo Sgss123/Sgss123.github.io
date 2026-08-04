@@ -1,7 +1,7 @@
 /**
  * EdgeOne Makers Edge Function - /api 端点
  *
- * 独立于 Cloudflare Workers 的 server/index.ts，仅运行在 EdgeOne 边缘节点。
+ * 运行在 EdgeOne 边缘节点。
  * 路由：/api 与 /api/ 由本文件处理；/api/* 子路径需额外创建 [[default]].js。
  *
  * EdgeOne Edge Functions 使用文件路由：

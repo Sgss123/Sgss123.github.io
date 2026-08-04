@@ -4,7 +4,6 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueDevTools from 'vite-plugin-vue-devtools'
 
-import { cloudflare } from "@cloudflare/vite-plugin"
 import { viteSsgPlugin } from './vite-ssg-plugin'
 
 // https://vite.dev/config/
@@ -17,10 +16,12 @@ export default defineConfig({
 	optimizeDeps: {
 		include: ['monaco-editor'],
 	},
+	build: {
+		outDir: 'dist/client',
+	},
 	plugins: [
 		vue(),
 		vueDevTools(),
-		cloudflare(),
 		viteSsgPlugin()
 	],
 	resolve: {

@@ -26,42 +26,31 @@ See [Vite Configuration Reference](https://vite.dev/config/).
 ## Project Setup
 
 ```sh
-pnpm install
+bun install
 ```
 
 ### Compile and Hot-Reload for Development
 
 ```sh
-pnpm dev
+bun run dev
 ```
 
 ### Type-Check, Compile and Minify for Production
 
 ```sh
-pnpm build
+bun run build
 ```
 
 ## Deployment
 
-本项目支持两种独立的部署环境，适配代码互不依赖：
-
-### Cloudflare Workers（默认）
-
-```sh
-pnpm run deploy      # 构建并通过 wrangler 部署到 Cloudflare Workers
-pnpm run preview     # 构建后本地运行 Wrangler 预览
-```
-
-配置文件：`wrangler.jsonc`、`server/index.ts`、`worker-configuration.d.ts`
-
-### Tencent EdgeOne Makers
+部署平台为 Tencent EdgeOne Makers。
 
 EdgeOne Makers 通过 Git 集成自动拉取仓库并构建部署，无需手动执行 CLI 命令。将仓库连接到 EdgeOne Makers 项目后，推送到 `main` 分支即可自动触发构建与发布。
 
 本地调试边缘函数（可选）：
 
 ```sh
-pnpm run dev:edgeone   # 通过 edgeone CLI 本地调试 edge-functions
+bun run dev:edgeone   # 通过 edgeone CLI 本地调试 edge-functions
 ```
 
 配置文件：`edgeone.json`（构建配置）、`edge-functions/`（边缘函数）、`.env.edgeone.example`（环境变量参考）
@@ -69,7 +58,7 @@ pnpm run dev:edgeone   # 通过 edgeone CLI 本地调试 edge-functions
 首次使用：
 
 1. 在 EdgeOne Makers 控制台选择「Import Git Repository」并授权仓库
-2. 配置构建命令（`pnpm run build`）与输出目录（`dist/client`），或由 `edgeone.json` 自动识别
+2. 配置构建命令（`bun run build`）与输出目录（`dist/client`），或由 `edgeone.json` 自动识别
 3. 在控制台「Environment Variables」中配置所需环境变量（参考 `.env.edgeone.example`）
 4. 推送到 `main` 分支即自动部署
 

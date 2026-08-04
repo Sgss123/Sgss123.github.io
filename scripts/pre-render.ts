@@ -92,7 +92,7 @@ async function collectSSGRoutes(): Promise<RouteInfo[]> {
 
 /**
  * 生成预渲染清单 JSON 文件
- * 用于 Cloudflare Pages 或其他部署平台识别哪些页面已被预渲染
+ * 用于 EdgeOne Makers 或其他部署平台识别哪些页面已被预渲染
  */
 async function generatePreRenderManifest(routes: RouteInfo[]): Promise<void> {
   const manifest = {
@@ -159,9 +159,9 @@ async function preRender(): Promise<void> {
     console.log('\n' + '='.repeat(50))
     console.log('✨ SSG configuration prepared!\n')
     console.log('💡 Next steps:')
-    console.log('   1. Build your application: pnpm run build-only')
+    console.log('   1. Build your application: bun run build-only')
     console.log('   2. Preview the static pages in the dist/ directory')
-    console.log('   3. Deploy to Cloudflare Pages or your hosting platform\n')
+    console.log('   3. Deploy to EdgeOne Makers or your hosting platform\n')
 
   } catch (error) {
     console.error('\n❌ Configuration generation failed:', error)
