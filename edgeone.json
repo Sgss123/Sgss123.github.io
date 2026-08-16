@@ -1,9 +1,0 @@
-{
-	"name": "mfjip612-github-io",
-	"framework": "vue",
-	"buildCommand": "bun run build",
-	"outputDirectory": "dist/client",
-	"installCommand": "bun install",
-	"devCommand": "bun run dev",
-	"environmentVariables": {}
-}
