@@ -1,4 +1,0 @@
-# Bun 项目配置
-[run]
-# 使用 Bun 内置 shell 执行 package.json 脚本，避免依赖系统 shell
-shell = "bun"
