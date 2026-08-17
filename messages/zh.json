@@ -37,7 +37,11 @@
     "footer": {
       "rights": "© 幄特斯普工作室。保留所有权利。",
       "placeholder": "占位联系方式",
-      "email": "contact@example.com"
+      "email": "contact@example.com",
+      "icp": "粤ICP备2026106743号",
+      "police": "粤公网安备44010502004250号",
+      "icpHref": "https://beian.miit.gov.cn/",
+      "policeHref": "http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44010502004250"
     }
   },
   "Home": {

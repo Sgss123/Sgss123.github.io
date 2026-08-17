@@ -37,7 +37,11 @@
     "footer": {
       "rights": "© Waterspo Studio. All rights reserved.",
       "placeholder": "Placeholder contact",
-      "email": "contact@example.com"
+      "email": "contact@example.com",
+      "icp": "",
+      "police": "",
+      "icpHref": "",
+      "policeHref": ""
     }
   },
   "Home": {

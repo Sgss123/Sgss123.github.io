@@ -1,4 +1,4 @@
-import { getTranslations } from "next-intl/server";
+import { getLocale, getTranslations } from "next-intl/server";
 import { Logo } from "@/components/ui/Logo";
 import { Link } from "@/i18n/navigation";
 import { LanguageSwitcher } from "./LanguageSwitcher";
@@ -6,6 +6,7 @@ import { ThemeSwitcher } from "./ThemeSwitcher";
 
 export async function SiteFooter() {
   const t = await getTranslations("Common");
+  const locale = await getLocale();
 
   return (
     <footer className="border-t border-[var(--border)]">
@@ -34,6 +35,28 @@ export async function SiteFooter() {
           </div>
         </div>
       </div>
+      {locale === "zh" && (
+        <div className="site-container border-t border-[var(--border)] py-4">
+          <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-[var(--muted-foreground)]">
+            <a
+              href={t("footer.icpHref")}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[var(--foreground)] hover:underline"
+            >
+              {t("footer.icp")}
+            </a>
+            <a
+              href={t("footer.policeHref")}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[var(--foreground)] hover:underline"
+            >
+              {t("footer.police")}
+            </a>
+          </div>
+        </div>
+      )}
     </footer>
   );
 }

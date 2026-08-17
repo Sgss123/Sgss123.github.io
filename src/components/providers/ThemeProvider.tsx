@@ -8,7 +8,7 @@ export type ThemeMode = "light" | "dark" | "system";
 export function ThemeProvider(props: ComponentProps<typeof NextThemesProvider>) {
   return (
     <NextThemesProvider
-      attribute="data"
+      attribute="class"
       defaultTheme="system"
       enableSystem
       disableTransitionOnChange
