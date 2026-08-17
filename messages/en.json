@@ -36,8 +36,7 @@
     },
     "footer": {
       "rights": "© Waterspo Studio. All rights reserved.",
-      "placeholder": "Placeholder contact",
-      "email": "contact@example.com",
+      "email": "support@waterspo.top",
       "icp": "",
       "police": "",
       "icpHref": "",
@@ -68,7 +67,7 @@
     },
     "contact": {
       "title": "Have something to build?",
-      "description": "Contact information is currently a placeholder and will be replaced when a public address is available."
+      "description": "Get in touch by email and tell us what you need."
     }
   },
   "Services": {
@@ -103,11 +102,10 @@
   },
   "Contact": {
     "metadataTitle": "Contact",
-    "metadataDescription": "Placeholder contact information for Waterspo Studio.",
+    "metadataDescription": "Contact information for Waterspo Studio.",
     "title": "Contact",
-    "intro": "Public contact information has not been provided yet.",
-    "placeholder": "Placeholder — not an active contact address",
-    "email": "contact@example.com"
+    "intro": "Get in touch with us by email.",
+    "email": "support@waterspo.top"
   },
   "Lab": {
     "metadataTitle": "Technology lab",

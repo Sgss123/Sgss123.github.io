@@ -111,8 +111,7 @@ export default async function HomePage({ params }: PageProps) {
           <p className="mt-2 text-sm leading-5 text-[var(--muted-foreground)]">
             {t("contact.description")}
           </p>
-          <p className="mt-4 italic text-[var(--muted-foreground)]">contact@example.com</p>
-          <p className="text-xs text-[var(--muted-foreground)]">(placeholder)</p>
+          <p className="mt-4 italic text-[var(--muted-foreground)]">support@waterspo.top</p>
           <Button asChild className="mt-4">
             <Link href="/contact">
               {common("contact")} <ArrowRight className="size-4" />

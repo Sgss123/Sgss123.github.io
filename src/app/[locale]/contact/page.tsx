@@ -23,10 +23,7 @@ export default async function ContactPage({ params }: PageProps) {
       <section className="site-container py-16 md:py-28">
         <div className="grid gap-5 border-y border-[var(--border)] py-10 md:grid-cols-[1fr_auto] md:items-end">
           <div>
-            <p className="text-sm uppercase tracking-[0.14em] text-[var(--muted-foreground)]">
-              {t("placeholder")}
-            </p>
-            <p className="mt-4 font-display text-4xl italic text-[var(--foreground)] md:text-6xl">
+            <p className="font-display text-4xl italic text-[var(--foreground)] md:text-6xl">
               {t("email")}
             </p>
           </div>

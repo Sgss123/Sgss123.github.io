@@ -36,8 +36,7 @@
     },
     "footer": {
       "rights": "© 幄特斯普工作室。保留所有权利。",
-      "placeholder": "占位联系方式",
-      "email": "contact@example.com",
+      "email": "support@waterspo.top",
       "icp": "粤ICP备2026106743号",
       "police": "粤公网安备44010502004250号",
       "icpHref": "https://beian.miit.gov.cn/",
@@ -68,7 +67,7 @@
     },
     "contact": {
       "title": "有项目需要构建？",
-      "description": "当前联系方式为占位内容，待公开联系地址确定后替换。"
+      "description": "欢迎通过邮件与我们联系，聊聊你的需求。"
     }
   },
   "Services": {
@@ -103,11 +102,10 @@
   },
   "Contact": {
     "metadataTitle": "联系我们",
-    "metadataDescription": "幄特斯普工作室的占位联系信息。",
+    "metadataDescription": "幄特斯普工作室的联系信息。",
     "title": "联系我们",
-    "intro": "目前尚未提供公开联系方式。",
-    "placeholder": "占位信息——并非有效联系地址",
-    "email": "contact@example.com"
+    "intro": "欢迎通过邮件与我们联系。",
+    "email": "support@waterspo.top"
   },
   "Lab": {
     "metadataTitle": "技术实验室",
