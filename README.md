@@ -26,5 +26,3 @@ pnpm lint
 pnpm test
 pnpm build
 ```
-
-The public contact address is intentionally a non-clickable placeholder. Replace the centralized message value when an official address is available.

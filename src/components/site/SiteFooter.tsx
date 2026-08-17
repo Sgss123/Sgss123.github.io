@@ -31,7 +31,6 @@ export async function SiteFooter() {
           </div>
           <div className="text-sm text-[var(--muted-foreground)]">
             <p className="italic">{t("footer.email")}</p>
-            <p className="text-xs">({t("footer.placeholder")})</p>
           </div>
         </div>
       </div>
