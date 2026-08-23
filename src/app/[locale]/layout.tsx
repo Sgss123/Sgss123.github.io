@@ -11,6 +11,11 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
+// Only "en"/"zh" are valid locales. With dynamicParams disabled, unprefixed
+// English paths like "/about" are not swallowed by this segment and fall
+// through to the root catch-all fallback (src/app/[...rest]/page.tsx).
+export const dynamicParams = false;
+
 export default async function LocaleLayout({
   children,
   params,
