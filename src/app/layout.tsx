@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Cormorant_Garamond, Noto_Sans_SC, Noto_Serif_SC } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const displayLatin = Cormorant_Garamond({
@@ -39,6 +40,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-KYSQ89XD2P"
+          strategy="beforeInteractive"
+        />
+        <Script id="google-analytics" strategy="beforeInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-KYSQ89XD2P');
+          `}
+        </Script>
+      </head>
       <body
         className={`${displayLatin.variable} ${displayCjk.variable} ${sans.variable} min-h-screen antialiased`}
       >
