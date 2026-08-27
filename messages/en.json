@@ -75,6 +75,19 @@
     "metadataDescription": "SaaS platform services, website operations and software development from Waterspo Studio.",
     "title": "Services",
     "intro": "Waterspo Studio's current business covers SaaS platform services, website operations and software development.",
+    "products": {
+      "title": "Launched products",
+      "intro": "We also operate products for real users, turning artificial intelligence capabilities into services people can use directly.",
+      "visit": "Visit product",
+      "bridge": {
+        "title": "Waterspo Bridge",
+        "description": "A unified multi-model AI API gateway. One API key and an OpenAI-compatible interface connect models such as DeepSeek, Kimi and GLM, with centralized request routing, usage tracking and access authentication."
+      },
+      "sentenceGymnasium": {
+        "title": "SentenceGymnasium",
+        "description": "An AI-powered multilingual sentence training platform with translation, paraphrasing and focused grammar practice. AI-generated exercises, judging, feedback and question reuse form a reviewable training loop."
+      }
+    },
     "items": {
       "saas": {
         "title": "SaaS platforms",

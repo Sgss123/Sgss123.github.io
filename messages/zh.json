@@ -75,6 +75,19 @@
     "metadataDescription": "幄特斯普工作室提供 SaaS 平台服务、网站运营与软件开发。",
     "title": "服务",
     "intro": "幄特斯普工作室目前的主营业务包括 SaaS 平台服务、网站运营与软件开发。",
+    "products": {
+      "title": "已上线业务",
+      "intro": "我们也在持续运营面向真实用户的产品，将人工智能能力落地为可直接使用的服务。",
+      "visit": "访问业务",
+      "bridge": {
+        "title": "Waterspo Bridge",
+        "description": "统一的多模型 AI API 网关。通过一个 API Key 和 OpenAI 兼容接口接入 DeepSeek、Kimi、GLM 等主流模型，并集中处理请求路由、用量统计与访问认证。"
+      },
+      "sentenceGymnasium": {
+        "title": "SentenceGymnasium",
+        "description": "AI 多语言句子训练平台，提供翻译、改写与语法特训三种练习方式。平台支持 AI 出题、判题、反馈和题目入库复用，帮助学习者形成可复盘的训练闭环。"
+      }
+    },
     "items": {
       "saas": {
         "title": "SaaS 平台",
