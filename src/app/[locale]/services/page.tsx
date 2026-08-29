@@ -1,8 +1,8 @@
-import { ArrowUpRight } from "lucide-react";
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { Button } from "@/components/ui/button";
+import { ProductCard } from "@/components/product/ProductCard";
 import { PageIntro } from "@/components/ui/PageIntro";
+import { SectionHeading } from "@/components/ui/SectionHeading";
 import { PRODUCT_ITEMS, SERVICE_ITEMS } from "@/lib/content";
 import { buildPageMetadata } from "@/lib/metadata";
 import type { Locale } from "@/lib/routing";
@@ -23,43 +23,55 @@ export default async function ServicesPage({ params }: PageProps) {
   return (
     <>
       <PageIntro title={t("title")} intro={t("intro")} />
-      <section className="site-container py-8 md:py-14">
-        <ol>
-          {SERVICE_ITEMS.map((service, index) => (
-            <li
-              key={service.id}
-              className="grid gap-5 border-b border-(--border) py-10 last:border-0 md:grid-cols-[6rem_0.9fr_1.1fr] md:items-start"
-            >
-              <span className="font-display text-3xl text-(--accent-text)">0{index + 1}.</span>
-              <h2 className="font-display text-4xl leading-none md:text-5xl">
-                {t(service.titleKey)}
-              </h2>
-              <p className="max-w-xl leading-7 text-(--muted-foreground)">
-                {t(service.descriptionKey)}
-              </p>
-            </li>
-          ))}
-        </ol>
-      </section>
-      <section className="border-t border-(--border) bg-surface">
-        <div className="site-container py-8 md:py-14">
-          <h2 className="font-display text-4xl leading-none md:text-5xl">{t("products.title")}</h2>
-          <p className="mt-4 max-w-2xl leading-7 text-(--muted-foreground)">
-            {t("products.intro")}
-          </p>
-          <ol className="mt-8 grid gap-5 md:grid-cols-2">
+
+      {/* Products first */}
+      <section className="editorial-section mt-0 border-t-0 pt-4">
+        <div className="site-container">
+          <div className="editorial-grid mb-10">
+            <div>
+              <SectionHeading className="text-display-lg">{t("products.title")}</SectionHeading>
+            </div>
+            <p className="editorial-lead">{t("products.intro")}</p>
+          </div>
+
+          <div className="grid gap-12">
             {PRODUCT_ITEMS.map((product, index) => (
-              <li key={product.id} className="border border-(--border) p-6">
-                <span className="font-display text-xl text-(--accent-text)">0{index + 1}.</span>
-                <h3 className="mt-5 font-display text-3xl leading-none">{t(product.titleKey)}</h3>
-                <p className="mt-4 leading-7 text-(--muted-foreground)">
-                  {t(product.descriptionKey)}
+              <ProductCard
+                key={product.id}
+                product={product}
+                title={t(product.titleKey)}
+                description={t(product.descriptionKey)}
+                kind={t(product.kindKey)}
+                alt={t(product.media.altKey)}
+                visit={t("products.visit")}
+                priority={index === 0}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Services underneath */}
+      <section className="editorial-section">
+        <div className="site-container">
+          <div className="editorial-grid mb-10">
+            <div>
+              <SectionHeading className="text-display-lg">{t("items.title")}</SectionHeading>
+            </div>
+            <p className="editorial-lead">{t("items.intro")}</p>
+          </div>
+
+          <ol>
+            {SERVICE_ITEMS.map((service, index) => (
+              <li
+                key={service.id}
+                className="grid gap-5 border-t border-[var(--border)] py-10 last:border-b md:grid-cols-[6rem_0.9fr_1.1fr] md:items-start"
+              >
+                <span className="editorial-index text-3xl">0{index + 1}.</span>
+                <h3 className="font-display text-display-md">{t(service.titleKey)}</h3>
+                <p className="max-w-xl leading-7 text-[var(--muted-foreground)]">
+                  {t(service.descriptionKey)}
                 </p>
-                <Button asChild variant="outline" className="mt-6">
-                  <a href={product.href} target="_blank" rel="noreferrer">
-                    {t("products.visit")} <ArrowUpRight className="size-4" />
-                  </a>
-                </Button>
               </li>
             ))}
           </ol>

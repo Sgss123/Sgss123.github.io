@@ -6,6 +6,9 @@ export interface LabExperiment {
   slug: LabSlug;
   renderMode: RenderMode;
   titleKey: string;
+  /** One-line summary used in listings. */
+  shortKey: string;
+  /** Full explanation used on the experiment page. */
   descriptionKey: string;
   codeExample: string;
   demo: "data" | "streaming" | "node" | "edge";
@@ -16,6 +19,7 @@ export const LAB_EXPERIMENTS: readonly LabExperiment[] = [
     slug: "ssr",
     renderMode: "SSR",
     titleKey: "ssr.title",
+    shortKey: "ssr.short",
     descriptionKey: "ssr.description",
     codeExample: "export const dynamic = 'force-dynamic';",
     demo: "data",
@@ -24,6 +28,7 @@ export const LAB_EXPERIMENTS: readonly LabExperiment[] = [
     slug: "isr",
     renderMode: "ISR",
     titleKey: "isr.title",
+    shortKey: "isr.short",
     descriptionKey: "isr.description",
     codeExample: "export const revalidate = 10;",
     demo: "data",
@@ -32,6 +37,7 @@ export const LAB_EXPERIMENTS: readonly LabExperiment[] = [
     slug: "ssg",
     renderMode: "SSG",
     titleKey: "ssg.title",
+    shortKey: "ssg.short",
     descriptionKey: "ssg.description",
     codeExample: "export default function StaticPage() { return <main />; }",
     demo: "data",
@@ -40,6 +46,7 @@ export const LAB_EXPERIMENTS: readonly LabExperiment[] = [
     slug: "streaming",
     renderMode: "Streaming",
     titleKey: "streaming.title",
+    shortKey: "streaming.short",
     descriptionKey: "streaming.description",
     codeExample: "<Suspense fallback={<Loading />}><SlowComponent /></Suspense>",
     demo: "streaming",
@@ -48,6 +55,7 @@ export const LAB_EXPERIMENTS: readonly LabExperiment[] = [
     slug: "node-functions",
     renderMode: "Node Functions",
     titleKey: "nodeFunctions.title",
+    shortKey: "nodeFunctions.short",
     descriptionKey: "nodeFunctions.description",
     codeExample: "export default function onRequest() { return new Response('Hello Node!'); }",
     demo: "node",
@@ -56,6 +64,7 @@ export const LAB_EXPERIMENTS: readonly LabExperiment[] = [
     slug: "edge-functions",
     renderMode: "Edge Functions",
     titleKey: "edgeFunctions.title",
+    shortKey: "edgeFunctions.short",
     descriptionKey: "edgeFunctions.description",
     codeExample: "export default function onRequest({geo}) { return Response.json({geo}); }",
     demo: "edge",

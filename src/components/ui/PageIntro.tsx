@@ -1,20 +1,25 @@
+import type { ReactNode } from "react";
+import { cn } from "@/lib/utils";
 import { SectionHeading } from "./SectionHeading";
 
 interface PageIntroProps {
   title: string;
   intro: string;
+  /** Optional trailing element, such as the lab page's signal field. */
+  children?: ReactNode;
 }
 
-export function PageIntro({ title, intro }: PageIntroProps) {
+export function PageIntro({ title, intro, children }: PageIntroProps) {
   return (
-    <section className="site-container border-b border-[var(--border)] py-16 md:py-24">
-      <div className="grid gap-8 md:grid-cols-[minmax(0,1.1fr)_minmax(18rem,0.7fr)] md:items-end">
-        <SectionHeading as="h1" className="text-5xl leading-[0.95] md:text-7xl">
+    <section className={cn("editorial-section border-t-0 pt-10 md:pt-16")}>
+      <div className="site-container editorial-grid items-end">
+        <SectionHeading as="h1" className="text-display-xl max-w-[46rem]">
           {title}
         </SectionHeading>
-        <p className="max-w-xl text-base leading-7 text-[var(--muted-foreground)] md:text-lg">
-          {intro}
-        </p>
+        <div>
+          <p className="editorial-lead">{intro}</p>
+          {children}
+        </div>
       </div>
     </section>
   );

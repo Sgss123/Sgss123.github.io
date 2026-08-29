@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { NetworkIllustration } from "@/components/site/NetworkIllustration";
+import { SignalField } from "@/components/motion/SignalField";
 import { PageIntro } from "@/components/ui/PageIntro";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { buildPageMetadata } from "@/lib/metadata";
@@ -19,24 +19,28 @@ export default async function AboutPage({ params }: PageProps) {
   setRequestLocale(locale);
   const t = await getTranslations("About");
 
+  const facts = [
+    { title: t("businessTitle"), body: t("business") },
+    { title: t("fieldsTitle"), body: t("fields") },
+  ];
+
   return (
     <>
       <PageIntro title={t("title")} intro={t("intro")} />
-      <section className="site-container grid gap-12 py-14 md:grid-cols-[1fr_1.1fr] md:py-24">
-        <div className="space-y-12">
-          <article className="border-l border-[var(--accent)] pl-6">
-            <SectionHeading className="text-3xl">{t("businessTitle")}</SectionHeading>
-            <p className="mt-4 max-w-xl leading-7 text-[var(--muted-foreground)]">
-              {t("business")}
-            </p>
-          </article>
-          <article className="border-l border-[var(--accent)] pl-6">
-            <SectionHeading className="text-3xl">{t("fieldsTitle")}</SectionHeading>
-            <p className="mt-4 max-w-xl leading-7 text-[var(--muted-foreground)]">{t("fields")}</p>
-          </article>
-        </div>
-        <div className="self-center">
-          <NetworkIllustration />
+
+      <section className="editorial-section border-t-0 pt-4">
+        <div className="site-container editorial-grid gap-y-12">
+          <div className="grid gap-12">
+            {facts.map((fact) => (
+              <article key={fact.title} className="border-l-2 border-[var(--accent)] pl-6 md:pl-8">
+                <SectionHeading className="text-display-sm">{fact.title}</SectionHeading>
+                <p className="editorial-lead mt-4">{fact.body}</p>
+              </article>
+            ))}
+          </div>
+          <div className="self-center">
+            <SignalField variant="hero" />
+          </div>
         </div>
       </section>
     </>

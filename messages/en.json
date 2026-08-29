@@ -1,10 +1,13 @@
 {
   "Common": {
     "brand": "Waterspo Studio",
+    "skipToContent": "Skip to content",
     "navLabel": "Primary navigation",
+    "footerNavLabel": "Footer navigation",
+    "labNavLabel": "Lab navigation",
     "nav": {
       "home": "Home",
-      "services": "Services",
+      "services": "Products & Services",
       "about": "About",
       "lab": "Lab",
       "contact": "Contact"
@@ -25,11 +28,13 @@
       "close": "Close navigation"
     },
     "actions": {
+      "viewProducts": "View the products",
       "exploreServices": "Explore services",
       "visitLab": "Visit the lab",
-      "aboutStudio": "About the studio",
       "enterLab": "Enter the lab",
+      "aboutStudio": "About the studio",
       "contact": "Contact",
+      "emailUs": "Email us",
       "backToLab": "Back to the lab",
       "runDemo": "Run demo",
       "running": "Running…"
@@ -46,34 +51,42 @@
   "Home": {
     "metadataTitle": "Independent software and AI studio",
     "metadataDescription": "Waterspo Studio works across SaaS platforms, website operations, software development, artificial intelligence and computer networks.",
-    "hero": {
+    "thesis": {
+      "eyebrow": "Independent studio",
       "title": "Independent ideas. Deliberate software.",
       "description": "Waterspo Studio works across SaaS platforms, website operations, software development, artificial intelligence, and computer networks."
     },
-    "services": {
-      "title": "What we work on",
-      "saas": "SaaS platforms",
-      "operations": "Website operations",
-      "development": "Software development"
+    "products": {
+      "eyebrow": "Launched products",
+      "title": "Two products, running in the open",
+      "intro": "We operate products for real users, turning artificial intelligence capabilities into services people can use directly.",
+      "visit": "Visit product"
     },
-    "technology": "Across software, AI and networks",
-    "about": {
+    "capabilities": {
+      "eyebrow": "Capabilities",
+      "title": "What we work on"
+    },
+    "lab": {
+      "eyebrow": "Proof of work",
+      "title": "Technology lab",
+      "description": "A working collection of rendering and runtime experiments: SSR, ISR, SSG, Streaming, Node Functions and Edge Functions.",
+      "view": "View the experiments"
+    },
+    "studio": {
+      "eyebrow": "The studio",
       "title": "About Waterspo",
       "description": "Waterspo Studio is a software and artificial intelligence studio working across SaaS platforms, website operations, software development, artificial intelligence and computer networks."
     },
-    "lab": {
-      "title": "Technology lab",
-      "description": "A working collection of rendering and runtime experiments: SSR, ISR, SSG, Streaming, Node Functions and Edge Functions."
-    },
-    "contact": {
+    "cta": {
+      "eyebrow": "Start a conversation",
       "title": "Have something to build?",
       "description": "Get in touch by email and tell us what you need."
     }
   },
   "Services": {
-    "metadataTitle": "Services",
-    "metadataDescription": "SaaS platform services, website operations and software development from Waterspo Studio.",
-    "title": "Services",
+    "metadataTitle": "Products & Services",
+    "metadataDescription": "SaaS platform services, website operations and software development from Waterspo Studio, plus two launched products.",
+    "title": "Products & Services",
     "intro": "Waterspo Studio's current business covers SaaS platform services, website operations and software development.",
     "products": {
       "title": "Launched products",
@@ -81,14 +94,20 @@
       "visit": "Visit product",
       "bridge": {
         "title": "Waterspo Bridge",
-        "description": "A unified multi-model AI API gateway. One API key and an OpenAI-compatible interface connect models such as DeepSeek, Kimi and GLM, with centralized request routing, usage tracking and access authentication."
+        "kind": "AI API gateway",
+        "description": "A unified multi-model AI API gateway. One API key and an OpenAI-compatible interface connect models such as DeepSeek, Kimi and GLM, with centralized request routing, usage tracking and access authentication.",
+        "alt": "Waterspo Bridge, the unified multi-model AI API gateway: the product home page showing the available models and the OpenAI-compatible API access details."
       },
       "sentenceGymnasium": {
         "title": "SentenceGymnasium",
-        "description": "An AI-powered multilingual sentence training platform with translation, paraphrasing and focused grammar practice. AI-generated exercises, judging, feedback and question reuse form a reviewable training loop."
+        "kind": "Sentence training",
+        "description": "An AI-powered multilingual sentence training platform with translation, paraphrasing and focused grammar practice. AI-generated exercises, judging, feedback and question reuse form a reviewable training loop.",
+        "alt": "SentenceGymnasium, the AI multilingual sentence training platform: the product home page showing translation, paraphrasing and grammar practice modes."
       }
     },
     "items": {
+      "title": "Services",
+      "intro": "Current business covers SaaS platform services, website operations and software development.",
       "saas": {
         "title": "SaaS platforms",
         "description": "Platform services for software delivered through the web."
@@ -118,7 +137,11 @@
     "metadataDescription": "Contact information for Waterspo Studio.",
     "title": "Contact",
     "intro": "Get in touch with us by email.",
-    "email": "support@waterspo.top"
+    "email": "support@waterspo.top",
+    "emailLabel": "Email Waterspo Studio",
+    "copy": "Copy email address",
+    "copied": "Email address copied to the clipboard.",
+    "copyFailed": "The address could not be copied. Please select it manually."
   },
   "Lab": {
     "metadataTitle": "Technology lab",

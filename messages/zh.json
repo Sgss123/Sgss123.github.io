@@ -1,10 +1,13 @@
 {
   "Common": {
     "brand": "幄特斯普工作室",
+    "skipToContent": "跳转到主要内容",
     "navLabel": "主导航",
+    "footerNavLabel": "页脚导航",
+    "labNavLabel": "实验室导航",
     "nav": {
       "home": "首页",
-      "services": "服务",
+      "services": "产品与服务",
       "about": "关于我们",
       "lab": "技术实验室",
       "contact": "联系我们"
@@ -25,11 +28,13 @@
       "close": "关闭导航"
     },
     "actions": {
+      "viewProducts": "查看产品",
       "exploreServices": "了解服务",
       "visitLab": "访问实验室",
-      "aboutStudio": "关于工作室",
       "enterLab": "进入实验室",
+      "aboutStudio": "关于工作室",
       "contact": "联系我们",
+      "emailUs": "发送邮件",
       "backToLab": "返回实验室",
       "runDemo": "运行演示",
       "running": "运行中…"
@@ -46,49 +51,63 @@
   "Home": {
     "metadataTitle": "独立软件与人工智能工作室",
     "metadataDescription": "幄特斯普工作室的业务涉及 SaaS 平台、网站运营、软件开发、人工智能与计算机网络。",
-    "hero": {
+    "thesis": {
+      "eyebrow": "独立工作室",
       "title": "独立思考，审慎构建。",
       "description": "幄特斯普工作室的业务涉及 SaaS 平台服务、网站运营、软件开发、人工智能与计算机网络。"
     },
-    "services": {
-      "title": "我们所做的工作",
-      "saas": "SaaS 平台",
-      "operations": "网站运营",
-      "development": "软件开发"
+    "products": {
+      "eyebrow": "已上线产品",
+      "title": "两个产品，持续对外开放",
+      "intro": "我们也在持续运营面向真实用户的产品，将人工智能能力落地为可直接使用的服务。",
+      "visit": "访问产品"
     },
-    "technology": "横跨软件、人工智能与网络",
-    "about": {
+    "capabilities": {
+      "eyebrow": "能力",
+      "title": "我们所做的工作"
+    },
+    "lab": {
+      "eyebrow": "技术验证",
+      "title": "技术实验室",
+      "description": "一组可实际运行的渲染与运行时实验：SSR、ISR、SSG、Streaming、Node Functions 与 Edge Functions。",
+      "view": "查看全部实验"
+    },
+    "studio": {
+      "eyebrow": "关于工作室",
       "title": "关于幄特斯普",
       "description": "幄特斯普工作室从事软件与人工智能相关工作，业务涉及 SaaS 平台、网站运营、软件开发、人工智能与计算机网络。"
     },
-    "lab": {
-      "title": "技术实验室",
-      "description": "一组可实际运行的渲染与运行时实验：SSR、ISR、SSG、Streaming、Node Functions 与 Edge Functions。"
-    },
-    "contact": {
+    "cta": {
+      "eyebrow": "开始沟通",
       "title": "有项目需要构建？",
       "description": "欢迎通过邮件与我们联系，聊聊你的需求。"
     }
   },
   "Services": {
-    "metadataTitle": "服务",
-    "metadataDescription": "幄特斯普工作室提供 SaaS 平台服务、网站运营与软件开发。",
-    "title": "服务",
+    "metadataTitle": "产品与服务",
+    "metadataDescription": "幄特斯普工作室提供 SaaS 平台服务、网站运营与软件开发，并运营两款已上线产品。",
+    "title": "产品与服务",
     "intro": "幄特斯普工作室目前的主营业务包括 SaaS 平台服务、网站运营与软件开发。",
     "products": {
-      "title": "已上线业务",
+      "title": "已上线产品",
       "intro": "我们也在持续运营面向真实用户的产品，将人工智能能力落地为可直接使用的服务。",
-      "visit": "访问业务",
+      "visit": "访问产品",
       "bridge": {
         "title": "Waterspo Bridge",
-        "description": "统一的多模型 AI API 网关。通过一个 API Key 和 OpenAI 兼容接口接入 DeepSeek、Kimi、GLM 等主流模型，并集中处理请求路由、用量统计与访问认证。"
+        "kind": "AI API 网关",
+        "description": "统一的多模型 AI API 网关。通过一个 API Key 和 OpenAI 兼容接口接入 DeepSeek、Kimi、GLM 等主流模型，并集中处理请求路由、用量统计与访问认证。",
+        "alt": "Waterspo Bridge 统一多模型 AI API 网关：产品首页展示了可用模型与 OpenAI 兼容的 API 接入信息。"
       },
       "sentenceGymnasium": {
         "title": "SentenceGymnasium",
-        "description": "AI 多语言句子训练平台，提供翻译、改写与语法特训三种练习方式。平台支持 AI 出题、判题、反馈和题目入库复用，帮助学习者形成可复盘的训练闭环。"
+        "kind": "句子训练",
+        "description": "AI 多语言句子训练平台，提供翻译、改写与语法特训三种练习方式。平台支持 AI 出题、判题、反馈和题目入库复用，帮助学习者形成可复盘的训练闭环。",
+        "alt": "SentenceGymnasium —— AI 多语言句子训练平台：产品首页展示了翻译、改写与语法练习三种模式。"
       }
     },
     "items": {
+      "title": "服务",
+      "intro": "目前的主营业务包括 SaaS 平台服务、网站运营与软件开发。",
       "saas": {
         "title": "SaaS 平台",
         "description": "面向通过 Web 交付的软件平台服务。"
@@ -118,7 +137,11 @@
     "metadataDescription": "幄特斯普工作室的联系信息。",
     "title": "联系我们",
     "intro": "欢迎通过邮件与我们联系。",
-    "email": "support@waterspo.top"
+    "email": "support@waterspo.top",
+    "emailLabel": "发送邮件给幄特斯普工作室",
+    "copy": "复制邮箱地址",
+    "copied": "邮箱地址已复制到剪贴板。",
+    "copyFailed": "无法自动复制，请手动选择该地址。"
   },
   "Lab": {
     "metadataTitle": "技术实验室",

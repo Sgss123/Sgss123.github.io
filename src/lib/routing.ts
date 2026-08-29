@@ -18,3 +18,23 @@ export function localizePath(locale: Locale, pathname: string): string {
   if (locale === "en") return unprefixed;
   return unprefixed === "/" ? "/zh" : `/zh${unprefixed}`;
 }
+
+/**
+ * BCP 47 document languages keyed by application locale.
+ *
+ * The value is resolved from the `[locale]` route parameter at render time, so
+ * production HTML carries the correct `lang` attribute without reading request
+ * headers or cookies. That keeps locale documents statically renderable on
+ * hosts that do not execute the next-intl proxy.
+ */
+export const documentLanguages: Record<Locale, string> = {
+  en: "en",
+  zh: "zh-CN",
+};
+
+/** Fallback documents (`/` and unprefixed English redirects) are English. */
+export const fallbackDocumentLanguage = "en";
+
+export function getDocumentLanguage(locale: Locale): string {
+  return documentLanguages[locale];
+}
